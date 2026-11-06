@@ -16,3 +16,7 @@
 Les sources des pages sont regroupées dans `pages/`, les réalisations dans `pages/realisations/` et le suivi dans `atelier/suivi/`. L’accueil reste à la racine et les anciennes adresses des pages sont prises en charge par des redirections Quarto.
 
 Pour chaque nouvelle séance, noter la page touchée, la preuve et le résultat du contrôle. [Registre des traces](../sources/traces.md) · [AI-log](ai-log.md) · [Prompts de reprise](../CONTEXTE.md).
+
+## Présentation visuelle
+
+La palette et la mise en page sont centralisées dans `assets/styles.css`. Le rendu des sept pages et les liens locaux ont été vérifiés.

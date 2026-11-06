@@ -1,0 +1,139 @@
+/* Palette du site personnel, inspirée de l’Université Laval. */
+:root {
+  --ink: #251c1d;
+  --wine: #791b32;
+  --wine-dark: #491023;
+  --gold: #f1c76c;
+  --paper: #faf6ef;
+  --line: #dfd2c3;
+  --bs-body-bg: var(--paper);
+  --bs-body-color: var(--ink);
+  --bs-link-color-rgb: 121, 27, 50;
+  --bs-link-hover-color-rgb: 73, 16, 35;
+}
+
+body { line-height: 1.65; }
+
+#quarto-header .navbar {
+  --bs-navbar-color: #f6eae9;
+  --bs-navbar-hover-color: var(--gold);
+  --bs-navbar-active-color: var(--gold);
+  --bs-navbar-brand-color: #fff8ed;
+  --bs-navbar-brand-hover-color: var(--gold);
+  background: #27181e;
+  border-bottom: 3px solid var(--gold);
+}
+
+#quarto-header .navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: .35em;
+}
+
+:focus-visible {
+  outline: 3px solid #a64a25;
+  outline-offset: 4px;
+}
+
+#quarto-header :focus-visible, .site-hero :focus-visible {
+  outline-color: var(--gold);
+}
+
+main h1, main h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: var(--wine-dark);
+}
+
+main h2 { border-bottom-color: var(--line); }
+#TOC a.active { color: var(--wine) !important; border-left-color: var(--wine) !important; }
+
+main table {
+  --bs-table-bg: #fffaf3;
+  --bs-table-striped-bg: #f4eae0;
+  --bs-table-border-color: var(--line);
+}
+main table thead th {
+  background: #eee0d5;
+  color: var(--wine-dark);
+}
+
+.site-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0 0 2.5rem;
+  padding: clamp(1.75rem, 6vw, 4.75rem);
+  border-radius: 1rem;
+  border-bottom: 4px solid var(--gold);
+  background: linear-gradient(120deg, #35121e, #701b33 72%, #892d43);
+  color: #fff8f0;
+}
+
+.site-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 45%;
+  background: radial-gradient(circle, #ffd887 1px, transparent 1.6px) 0 0 / 18px 18px;
+  mask-image: linear-gradient(110deg, transparent 12%, #000 90%);
+  opacity: .24;
+  pointer-events: none;
+}
+
+.hero-label {
+  color: var(--gold);
+  font-size: .8rem;
+  font-weight: 750;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.site-hero h1 {
+  max-width: 15ch;
+  color: inherit;
+  font-size: clamp(2.25rem, 6vw, 4.4rem);
+  letter-spacing: -.035em;
+  line-height: 1.06;
+  margin: .5rem 0 1rem;
+  overflow-wrap: anywhere;
+}
+
+.site-hero .level1 > p { max-width: 54ch; }
+.hero-actions { margin-top: 1.45rem; }
+.hero-actions p { display: flex; flex-wrap: wrap; gap: .65rem; margin-bottom: 0; }
+.hero-actions a {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  border-radius: .45rem;
+  padding: .58rem 1rem;
+  color: #fff8f0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hero-actions a:first-child {
+  background: var(--gold);
+  color: #2c1619;
+}
+.hero-actions a:hover { text-decoration: underline; }
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-card {
+  background: #fffaf4;
+  border: 1px solid var(--line);
+  border-top: 3px solid #b57a37;
+  border-radius: .65rem;
+  padding: 1.2rem;
+}
+
+.home-card h3 { font-size: 1.1rem; margin: 0 0 .5rem; }
+.home-card p:last-child { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .home-grid { grid-template-columns: 1fr; }
+  .site-hero { margin-bottom: 1.5rem; }
+}

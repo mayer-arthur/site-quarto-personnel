@@ -14,3 +14,7 @@ La [déclaration publique](../../pages/declaration-ia.qmd) synthétise les usage
 ## 6 novembre 2026 — Rangement du dépôt
 
 Codex a regroupé les sources Quarto et les fichiers de suivi à la demande d’Arthur. Les sept pages ont été régénérées, les six redirections contrôlées et les liens locaux vérifiés.
+
+## 6 novembre 2026 — Refonte visuelle
+
+Codex a adapté la palette proposée par Arthur et créé la feuille de style ainsi que le bandeau et les cartes de l’accueil. Le rendu Quarto, la structure HTML et les ressources locales des sept pages ont été vérifiés. Le navigateur intégré a bloqué l’aperçu du fichier local.

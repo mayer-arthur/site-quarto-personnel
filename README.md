@@ -9,6 +9,7 @@ Site du cours STT-6230 à l’Université Laval, automne 2026. La page [Le cours
 | [index.qmd](index.qmd) | Source de la page d’accueil. |
 | [pages/](pages/) | Cours, parcours et déclaration IA. |
 | [pages/realisations/](pages/realisations/) | Sommaire, Défi 2 et GitHub Actions. |
+| [assets/styles.css](assets/styles.css) | Palette et mise en page du site. |
 | [atelier/](atelier/) | Prompts, agents, skills, traces et suivi. |
 | [docs/](docs/) | Site généré. Ouvrir [index.html](docs/index.html) pour le consulter. |
 
@@ -23,7 +24,7 @@ Si OneDrive refuse le remplacement de `docs/` ou du cache, voici la procédure P
 ```powershell
 $stage = Join-Path (Get-Location).Path ('.quarto/stage-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
-Copy-Item -LiteralPath 'index.qmd','_quarto.yml','.nojekyll','pages' -Destination $stage -Recurse -Force
+Copy-Item -LiteralPath 'index.qmd','_quarto.yml','.nojekyll','pages','assets' -Destination $stage -Recurse -Force
 & 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/quarto.exe' render $stage
 if ($LASTEXITCODE -ne 0) { throw 'Le rendu a échoué.' }
 Get-ChildItem -LiteralPath (Join-Path $stage 'docs') -Force |

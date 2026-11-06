@@ -1,10 +1,45 @@
 ---
-title: "Programmer pour la science des données"
-subtitle: "Arthur Mayer · Université Laval · Automne 2026"
+pagetitle: "Programmer pour la science des données"
+page-layout: full
+toc: false
 ---
 
-Ce site retrace mon parcours dans le cours STT-6230 à l’Université Laval. Il rassemble les apprentissages du cours, les défis individuels et les jalons du projet d’équipe.
+:::: {.site-hero}
 
-- [Suivre le cours](pages/cours.qmd) pour retrouver les modules, les défis et les jalons.
-- [Voir mes réalisations](pages/realisations/index.qmd) pour explorer le Défi 2 et ma contribution GitHub Actions.
-- [Voir mon parcours](pages/parcours.qmd) pour un aperçu des compétences mobilisées.
+::: {.hero-label}
+Arthur Mayer · Université Laval · Automne 2026
+:::
+
+# Programmer pour la science des données {.unnumbered}
+
+Mon parcours dans le cours STT-6230, des premiers exercices en R à la collecte automatisée de données pour le projet d’équipe.
+
+::: {.hero-actions}
+[Explorer le cours](pages/cours.qmd) [Voir mes réalisations](pages/realisations/index.qmd)
+:::
+
+::::
+
+## Du cours à la pratique
+
+:::: {.home-grid}
+
+::: {.home-card}
+### [Défis et jalons](pages/cours.qmd)
+
+Les travaux de la session, les difficultés rencontrées et les étapes du projet.
+:::
+
+::: {.home-card}
+### [Deux réalisations](pages/realisations/index.qmd)
+
+Une jointure vérifiée dans le Défi 2 et une collecte quotidienne avec GitHub Actions.
+:::
+
+::: {.home-card}
+### [Parcours et compétences](pages/parcours.qmd)
+
+Préparer des données, vérifier une analyse et communiquer ses résultats.
+:::
+
+::::

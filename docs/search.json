@@ -21,6 +21,13 @@
     "text": "Usage documenté pendant le Défi 2\nLe journal du portfolio distingue deux usages de ChatGPT. Le 20 octobre, l’aide portait sur l’entraînement et la formulation des demandes. Le 21 octobre, elle touchait le code R, les jointures et leurs contrôles, les calculs, la figure et le rapport Quarto. Le bilan et le rapport documentent les contrôles d’effectif, le traitement du lot L10 et le calcul indépendant pour L01."
   },
   {
+    "objectID": "pages/declaration-ia.html#refonte-visuelle-6-novembre-2026",
+    "href": "pages/declaration-ia.html#refonte-visuelle-6-novembre-2026",
+    "title": "Déclaration d’utilisation de l’IA",
+    "section": "Refonte visuelle — 6 novembre 2026",
+    "text": "Refonte visuelle — 6 novembre 2026\nOpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction proposée par Arthur. Les pages et leurs ressources ont été contrôlées après le rendu Quarto."
+  },
+  {
     "objectID": "pages/realisations/defi-2.html",
     "href": "pages/realisations/defi-2.html",
     "title": "Défi 2",
@@ -95,7 +102,14 @@
     "href": "index.html",
     "title": "Programmer pour la science des données",
     "section": "",
-    "text": "Ce site retrace mon parcours dans le cours STT-6230 à l’Université Laval. Il rassemble les apprentissages du cours, les défis individuels et les jalons du projet d’équipe.\n\nSuivre le cours pour retrouver les modules, les défis et les jalons.\nVoir mes réalisations pour explorer le Défi 2 et ma contribution GitHub Actions.\nVoir mon parcours pour un aperçu des compétences mobilisées."
+    "text": "Arthur Mayer · Université Laval · Automne 2026\n\n\n\nMon parcours dans le cours STT-6230, des premiers exercices en R à la collecte automatisée de données pour le projet d’équipe.\n\nExplorer le cours Voir mes réalisations"
+  },
+  {
+    "objectID": "index.html#du-cours-à-la-pratique",
+    "href": "index.html#du-cours-à-la-pratique",
+    "title": "Programmer pour la science des données",
+    "section": "Du cours à la pratique",
+    "text": "Du cours à la pratique\n\n\nDéfis et jalons\nLes travaux de la session, les difficultés rencontrées et les étapes du projet.\n\n\nDeux réalisations\nUne jointure vérifiée dans le Défi 2 et une collecte quotidienne avec GitHub Actions.\n\n\nParcours et compétences\nPréparer des données, vérifier une analyse et communiquer ses résultats."
   },
   {
     "objectID": "pages/parcours.html",
