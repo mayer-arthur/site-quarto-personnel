@@ -1,6 +1,6 @@
 # Atelier de rédaction
 
-Le cycle est court. L’agent Sources prépare une trace vérifiable. L’agent Quarto s’en sert pour rédiger ou réviser la page demandée, puis rend le site. Le suivi courant reste dans [progression.md](../progression.md) et le détail des usages dans [ai-log.md](../ai-log.md).
+Le cycle est court. L’agent Sources prépare une trace vérifiable. L’agent Quarto s’en sert pour rédiger ou réviser la page demandée, puis rend le site. Le suivi courant reste dans [progression.md](suivi/progression.md) et le détail des usages dans [ai-log.md](suivi/ai-log.md).
 
 ## Prompts à reprendre
 

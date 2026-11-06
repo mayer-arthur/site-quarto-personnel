@@ -9,4 +9,8 @@
 - **Vérifications** — gabarit local et sources du portfolio et du projet rapprochés. Le CSV a été contrôlé localement en lecture seule. Les vérifications du Défi 2 sont rapportées d’après le bilan et le HTML. Codex a rendu les sept pages et vérifié les liens et ressources locaux.
 - **À relire** — Arthur pourra valider la formulation à la première personne et compléter la présentation. Cette entrée décrit le travail du site. Les usages historiques des travaux restent dans leurs journaux sources.
 
-La [déclaration publique](declaration-ia.qmd) synthétise les usages significatifs qui ont influencé le site.
+La [déclaration publique](../../pages/declaration-ia.qmd) synthétise les usages significatifs qui ont influencé le site.
+
+## 6 novembre 2026 — Rangement du dépôt
+
+Codex a regroupé les sources Quarto et les fichiers de suivi à la demande d’Arthur. Les sept pages ont été régénérées, les six redirections contrôlées et les liens locaux vérifiés.

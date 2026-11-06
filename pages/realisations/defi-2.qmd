@@ -1,6 +1,8 @@
 ---
 title: "Défi 2"
 subtitle: "Une jointure fiable pour comparer deux scénarios tarifaires"
+aliases:
+  - /defi-2.html
 ---
 
 ## Contexte et production
@@ -26,4 +28,4 @@ effectif’effectif a permis de détecter que la jointure changeait l’unité d
 
 Le bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.
 
-La préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. [Voir la déclaration IA du site](declaration-ia.qmd).
+La préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. [Voir la déclaration IA du site](../declaration-ia.qmd).

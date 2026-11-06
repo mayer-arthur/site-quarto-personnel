@@ -11,4 +11,8 @@
 - [ ] Vérifier les consignes officielles et les liens que le site pourra rendre publics.
 - [ ] Préparer la remise quand le site sera prêt. Renseigner URL, dépôt source, commit évalué et emplacement des réalisations dans le README. L’ajout du lien au portfolio reste à faire par Arthur ou sur instruction distincte.
 
-Pour chaque nouvelle séance, noter la page touchée, la preuve et le résultat du contrôle. [Registre des traces](atelier/sources/traces.md) · [AI-log](ai-log.md) · [Prompts de reprise](atelier/CONTEXTE.md).
+## Organisation des fichiers
+
+Les sources des pages sont regroupées dans `pages/`, les réalisations dans `pages/realisations/` et le suivi dans `atelier/suivi/`. L’accueil reste à la racine et les anciennes adresses des pages sont prises en charge par des redirections Quarto.
+
+Pour chaque nouvelle séance, noter la page touchée, la preuve et le résultat du contrôle. [Registre des traces](../sources/traces.md) · [AI-log](ai-log.md) · [Prompts de reprise](../CONTEXTE.md).

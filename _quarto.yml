@@ -3,12 +3,12 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - parcours.qmd
-    - cours.qmd
-    - realisations.qmd
-    - defi-2.qmd
-    - github-actions.qmd
-    - declaration-ia.qmd
+    - pages/parcours.qmd
+    - pages/cours.qmd
+    - pages/realisations/index.qmd
+    - pages/realisations/defi-2.qmd
+    - pages/realisations/github-actions.qmd
+    - pages/declaration-ia.qmd
 
 lang: fr
 
@@ -19,13 +19,13 @@ website:
       - text: Accueil
         href: index.qmd
       - text: Parcours
-        href: parcours.qmd
+        href: pages/parcours.qmd
       - text: Le cours
-        href: cours.qmd
+        href: pages/cours.qmd
       - text: Réalisations
-        href: realisations.qmd
+        href: pages/realisations/index.qmd
       - text: Déclaration IA
-        href: declaration-ia.qmd
+        href: pages/declaration-ia.qmd
 
 format:
   html:

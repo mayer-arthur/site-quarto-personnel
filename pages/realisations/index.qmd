@@ -1,5 +1,7 @@
 ---
 title: "Deux réalisations"
+aliases:
+  - /realisations.html
 ---
 
 ## [Défi 2 — vérifier une jointure et ses calculs](defi-2.qmd)

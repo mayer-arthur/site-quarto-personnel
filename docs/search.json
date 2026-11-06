@@ -1,91 +1,91 @@
 [
   {
-    "objectID": "declaration-ia.html",
-    "href": "declaration-ia.html",
+    "objectID": "pages/declaration-ia.html",
+    "href": "pages/declaration-ia.html",
     "title": "Déclaration d’utilisation de l’IA",
     "section": "",
     "text": "Outil — OpenAI Codex et deux sous-agents de recherche.\nTâche — préparer la structure Quarto, relever les traces dans les dépôts du cours et rédiger une première version des pages.\nÉléments conservés — organisation du site, synthèses initiales et procédures de rédaction et de vérification.\nVérifications — rapprochement des pages avec le gabarit et les traces des dépôts. Les résultats des travaux du cours sont présentés d’après ces traces.\nModifications apportées — le gabarit a été adapté pour donner au cours une page dédiée et aux deux réalisations des pages distinctes."
   },
   {
-    "objectID": "declaration-ia.html#mise-en-place-du-site-6-novembre-2026",
-    "href": "declaration-ia.html#mise-en-place-du-site-6-novembre-2026",
+    "objectID": "pages/declaration-ia.html#mise-en-place-du-site-6-novembre-2026",
+    "href": "pages/declaration-ia.html#mise-en-place-du-site-6-novembre-2026",
     "title": "Déclaration d’utilisation de l’IA",
     "section": "",
     "text": "Outil — OpenAI Codex et deux sous-agents de recherche.\nTâche — préparer la structure Quarto, relever les traces dans les dépôts du cours et rédiger une première version des pages.\nÉléments conservés — organisation du site, synthèses initiales et procédures de rédaction et de vérification.\nVérifications — rapprochement des pages avec le gabarit et les traces des dépôts. Les résultats des travaux du cours sont présentés d’après ces traces.\nModifications apportées — le gabarit a été adapté pour donner au cours une page dédiée et aux deux réalisations des pages distinctes."
   },
   {
-    "objectID": "declaration-ia.html#usage-documenté-pendant-le-défi-2",
-    "href": "declaration-ia.html#usage-documenté-pendant-le-défi-2",
+    "objectID": "pages/declaration-ia.html#usage-documenté-pendant-le-défi-2",
+    "href": "pages/declaration-ia.html#usage-documenté-pendant-le-défi-2",
     "title": "Déclaration d’utilisation de l’IA",
     "section": "Usage documenté pendant le Défi 2",
     "text": "Usage documenté pendant le Défi 2\nLe journal du portfolio distingue deux usages de ChatGPT. Le 20 octobre, l’aide portait sur l’entraînement et la formulation des demandes. Le 21 octobre, elle touchait le code R, les jointures et leurs contrôles, les calculs, la figure et le rapport Quarto. Le bilan et le rapport documentent les contrôles d’effectif, le traitement du lot L10 et le calcul indépendant pour L01."
   },
   {
-    "objectID": "defi-2.html",
-    "href": "defi-2.html",
+    "objectID": "pages/realisations/defi-2.html",
+    "href": "pages/realisations/defi-2.html",
     "title": "Défi 2",
     "section": "",
     "text": "L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats."
   },
   {
-    "objectID": "defi-2.html#contexte-et-production",
-    "href": "defi-2.html#contexte-et-production",
+    "objectID": "pages/realisations/defi-2.html#contexte-et-production",
+    "href": "pages/realisations/defi-2.html#contexte-et-production",
     "title": "Défi 2",
     "section": "",
     "text": "L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats."
   },
   {
-    "objectID": "defi-2.html#le-choix-technique",
-    "href": "defi-2.html#le-choix-technique",
+    "objectID": "pages/realisations/defi-2.html#le-choix-technique",
+    "href": "pages/realisations/defi-2.html#le-choix-technique",
     "title": "Défi 2",
     "section": "Le choix technique",
     "text": "Le choix technique\nUn même code tarifaire peut apparaître dans plusieurs tables. La jointure sur le code seul a produit 25 lignes pour le scénario après, alors que j’en attendais 10. La paire source_table et code_tarifaire identifie le tarif dans la bonne table. J’ai traité le code comme du texte pour conserver ses zéros initiaux.\n\n\n\n\n\n\n\nContrôle\nRésultat documenté\n\n\n\n\nEffectif après jointure\n10 lots par scénario avec la clé composite.\n\n\nCalcul indépendant\nPour L01, 40 000 × 50 % donne 20 000 CAD.\n\n\nValeur inconnue\nLe montant de L10 est conservé comme manquant.\n\n\nSous-total des neuf lots calculables\n32 500 CAD avant et 61 750 CAD après, soit un écart de 29 250 CAD."
   },
   {
-    "objectID": "defi-2.html#ce-que-cette-réalisation-montre",
-    "href": "defi-2.html#ce-que-cette-réalisation-montre",
+    "objectID": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
+    "href": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
     "title": "Défi 2",
     "section": "Ce que cette réalisation montre",
     "text": "Ce que cette réalisation montre\neffectif’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant."
   },
   {
-    "objectID": "defi-2.html#trace-et-limite",
-    "href": "defi-2.html#trace-et-limite",
+    "objectID": "pages/realisations/defi-2.html#trace-et-limite",
+    "href": "pages/realisations/defi-2.html#trace-et-limite",
     "title": "Défi 2",
     "section": "Trace et limite",
     "text": "Trace et limite\nLe bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.\nLa préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. Voir la déclaration IA du site."
   },
   {
-    "objectID": "cours.html",
-    "href": "cours.html",
+    "objectID": "pages/cours.html",
+    "href": "pages/cours.html",
     "title": "Le cours STT-6230",
     "section": "",
     "text": "Semaine\nTravail documenté\nCompétence mise en pratique\n\n\n\n\n1\nMise en place du portfolio et prise en main de GitHub.\nOrganiser et versionner le travail.\n\n\n2\nImportation et exportation de données de formats variés.\nChoisir la fonction de lecture d’après le contenu du fichier.\n\n\n3\nExercices de calcul mathématique et statistique.\nTraduire une démarche de calcul en R.\n\n\n4\nPrétraitement et comparaison de reshape() et pivot_wider().\nComparer les résultats après avoir harmonisé leur ordre et leur structure.\n\n\n5\nRetour sur le Défi 1.\nRepérer les contrôles et les explications qui manquaient à l’analyse.\n\n\n6\nExercices de visualisation.\nMettre en forme des données pour les communiquer.\n\n\n7\nRapport Quarto sur les séismes et entraînement au Défi 2.\nRendre un rapport depuis les sources et corriger des chemins relatifs.\n\n\n8\nDéfi 2 sur les tarifs et les lots.\nVérifier une clé de jointure, les effectifs et un calcul de référence.\n\n\n9\nExercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon.\nComparer plusieurs façons de parcourir une liste.\n\n\n\nLa chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle sera complétée à mesure que les traces de fin de session seront disponibles."
   },
   {
-    "objectID": "cours.html#des-premières-données-à-lautomatisation",
-    "href": "cours.html#des-premières-données-à-lautomatisation",
+    "objectID": "pages/cours.html#des-premières-données-à-lautomatisation",
+    "href": "pages/cours.html#des-premières-données-à-lautomatisation",
     "title": "Le cours STT-6230",
     "section": "",
     "text": "Semaine\nTravail documenté\nCompétence mise en pratique\n\n\n\n\n1\nMise en place du portfolio et prise en main de GitHub.\nOrganiser et versionner le travail.\n\n\n2\nImportation et exportation de données de formats variés.\nChoisir la fonction de lecture d’après le contenu du fichier.\n\n\n3\nExercices de calcul mathématique et statistique.\nTraduire une démarche de calcul en R.\n\n\n4\nPrétraitement et comparaison de reshape() et pivot_wider().\nComparer les résultats après avoir harmonisé leur ordre et leur structure.\n\n\n5\nRetour sur le Défi 1.\nRepérer les contrôles et les explications qui manquaient à l’analyse.\n\n\n6\nExercices de visualisation.\nMettre en forme des données pour les communiquer.\n\n\n7\nRapport Quarto sur les séismes et entraînement au Défi 2.\nRendre un rapport depuis les sources et corriger des chemins relatifs.\n\n\n8\nDéfi 2 sur les tarifs et les lots.\nVérifier une clé de jointure, les effectifs et un calcul de référence.\n\n\n9\nExercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon.\nComparer plusieurs façons de parcourir une liste.\n\n\n\nLa chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle sera complétée à mesure que les traces de fin de session seront disponibles."
   },
   {
-    "objectID": "cours.html#les-défis",
-    "href": "cours.html#les-défis",
+    "objectID": "pages/cours.html#les-défis",
+    "href": "pages/cours.html#les-défis",
     "title": "Le cours STT-6230",
     "section": "Les défis",
     "text": "Les défis\nDéfi 1. Le retour sur cette première évaluation fait ressortir trois points à travailler, soit la validation des résultats, la documentation des choix et la reproductibilité. L’entraînement de la semaine 7 a notamment servi à corriger l’appel à un script depuis Quarto.\nDéfi 2. Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La réalisation détaillée explique comment ces contrôles ont orienté le choix de la jointure."
   },
   {
-    "objectID": "cours.html#les-jalons-du-portfolio",
-    "href": "cours.html#les-jalons-du-portfolio",
+    "objectID": "pages/cours.html#les-jalons-du-portfolio",
+    "href": "pages/cours.html#les-jalons-du-portfolio",
     "title": "Le cours STT-6230",
     "section": "Les jalons du portfolio",
     "text": "Les jalons du portfolio\n\nSemaine 3 — démarrage. Mettre en place le portfolio et constituer les premières traces.\nSemaine 9 — progression. Revenir sur les difficultés rencontrées et relier les améliorations à des preuves, comme la comparaison de mises en forme et le rendu du rapport de la semaine 7.\nSemaine 14 — bilan final à venir. Relire l’ensemble du parcours, choisir les preuves les plus parlantes et vérifier la cohérence des liens et de la documentation."
   },
   {
-    "objectID": "cours.html#le-projet-déquipe",
-    "href": "cours.html#le-projet-déquipe",
+    "objectID": "pages/cours.html#le-projet-déquipe",
+    "href": "pages/cours.html#le-projet-déquipe",
     "title": "Le cours STT-6230",
     "section": "Le projet d’équipe",
     "text": "Le projet d’équipe\nLe projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.\nL’application relève du travail collectif. Ma contribution présentée ici porte sur la collecte automatisée des indicateurs d’urgence avec GitHub Actions.\nConsulter le site du cours."
@@ -98,71 +98,71 @@
     "text": "Ce site retrace mon parcours dans le cours STT-6230 à l’Université Laval. Il rassemble les apprentissages du cours, les défis individuels et les jalons du projet d’équipe.\n\nSuivre le cours pour retrouver les modules, les défis et les jalons.\nVoir mes réalisations pour explorer le Défi 2 et ma contribution GitHub Actions.\nVoir mon parcours pour un aperçu des compétences mobilisées."
   },
   {
-    "objectID": "parcours.html",
-    "href": "parcours.html",
+    "objectID": "pages/parcours.html",
+    "href": "pages/parcours.html",
     "title": "Parcours et compétences",
     "section": "",
     "text": "Le parcours dans le cours relie quatre compétences que j’ai mobilisées au fil de la session.\n\n\n\nCompétence\nExemple\n\n\n\n\nPréparer des données\nImporter, transformer et restructurer des tables en R.\n\n\nVérifier une analyse\nContrôler les clés de jointure et refaire un calcul de référence dans le Défi 2.\n\n\nCommuniquer des résultats\nProduire des graphiques et des rapports avec Quarto.\n\n\nAutomatiser des vérifications\nMettre en place un workflow GitHub Actions pour le projet d’équipe."
   },
   {
-    "objectID": "realisations.html",
-    "href": "realisations.html",
+    "objectID": "pages/realisations/index.html",
+    "href": "pages/realisations/index.html",
     "title": "Deux réalisations",
     "section": "",
     "text": "Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs."
   },
   {
-    "objectID": "realisations.html#défi-2-vérifier-une-jointure-et-ses-calculs",
-    "href": "realisations.html#défi-2-vérifier-une-jointure-et-ses-calculs",
+    "objectID": "pages/realisations/index.html#défi-2-vérifier-une-jointure-et-ses-calculs",
+    "href": "pages/realisations/index.html#défi-2-vérifier-une-jointure-et-ses-calculs",
     "title": "Deux réalisations",
     "section": "",
     "text": "Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs."
   },
   {
-    "objectID": "realisations.html#projet-github-actions",
-    "href": "realisations.html#projet-github-actions",
+    "objectID": "pages/realisations/index.html#projet-github-actions",
+    "href": "pages/realisations/index.html#projet-github-actions",
     "title": "Deux réalisations",
     "section": "Projet — GitHub Actions",
     "text": "Projet — GitHub Actions\nUne contribution au projet d’équipe centrée sur l’automatisation des vérifications dans GitHub."
   },
   {
-    "objectID": "github-actions.html",
-    "href": "github-actions.html",
+    "objectID": "pages/realisations/github-actions.html",
+    "href": "pages/realisations/github-actions.html",
     "title": "GitHub Actions pour le projet",
     "section": "",
     "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation."
   },
   {
-    "objectID": "github-actions.html#contexte-et-contribution",
-    "href": "github-actions.html#contexte-et-contribution",
+    "objectID": "pages/realisations/github-actions.html#contexte-et-contribution",
+    "href": "pages/realisations/github-actions.html#contexte-et-contribution",
     "title": "GitHub Actions pour le projet",
     "section": "",
     "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation."
   },
   {
-    "objectID": "github-actions.html#de-la-collecte-au-csv",
-    "href": "github-actions.html#de-la-collecte-au-csv",
+    "objectID": "pages/realisations/github-actions.html#de-la-collecte-au-csv",
+    "href": "pages/realisations/github-actions.html#de-la-collecte-au-csv",
     "title": "GitHub Actions pour le projet",
     "section": "De la collecte au CSV",
     "text": "De la collecte au CSV\n\nLe workflow peut être lancé manuellement et prévoit trois passages quotidiens, à 3 h 55, 11 h 55 et 20 h 55, heure de Toronto.\nLe script R récupère les indicateurs et conserve la première observation par couple date de collecte et région.\nLe workflow ajoute uniquement le CSV historique à l’index Git et crée un commit si son contenu a changé."
   },
   {
-    "objectID": "github-actions.html#justification-technique",
-    "href": "github-actions.html#justification-technique",
+    "objectID": "pages/realisations/github-actions.html#justification-technique",
+    "href": "pages/realisations/github-actions.html#justification-technique",
     "title": "GitHub Actions pour le projet",
     "section": "Justification technique",
     "text": "Justification technique\nLa clé date–région fixe une unité simple pour une analyse quotidienne. Trois passages offrent plusieurs occasions de collecter, mais le CSV quotidien conserve une seule observation par région. Une clé avec horodatage conserverait les variations au cours de la journée et permettrait de comparer les passages. Elle demanderait une règle supplémentaire pour résumer ou comparer ces relevés à l’échelle quotidienne."
   },
   {
-    "objectID": "github-actions.html#validation-et-limite",
-    "href": "github-actions.html#validation-et-limite",
+    "objectID": "pages/realisations/github-actions.html#validation-et-limite",
+    "href": "pages/realisations/github-actions.html#validation-et-limite",
     "title": "GitHub Actions pour le projet",
     "section": "Validation et limite",
     "text": "Validation et limite\nUne inspection du CSV local lors de la préparation du site a trouvé 400 lignes sur 25 jours, du 8 octobre au 1er novembre 2026, avec 16 régions par jour et aucun doublon sur la clé date–région. Les trois indicateurs étaient manquants pour les 25 lignes d’une région. L’effectif attendu confirme la couverture des lignes, tandis qu’un contrôle des valeurs manquantes mesure la complétude des indicateurs.\nCette inspection porte sur un instantané du CSV. Les horaires correspondent à la configuration du workflow et aucune collecte distante n’a été déclenchée pour ce contrôle."
   },
   {
-    "objectID": "github-actions.html#trace-du-projet",
-    "href": "github-actions.html#trace-du-projet",
+    "objectID": "pages/realisations/github-actions.html#trace-du-projet",
+    "href": "pages/realisations/github-actions.html#trace-du-projet",
     "title": "GitHub Actions pour le projet",
     "section": "Trace du projet",
     "text": "Trace du projet\nLe guide « Explication de la collecte » dans GitAction documente le script R et son workflow. Le commit 9be82a3 du 1er novembre retrace la révision du script et du guide."

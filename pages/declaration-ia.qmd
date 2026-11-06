@@ -1,5 +1,7 @@
 ---
 title: "Déclaration d’utilisation de l’IA"
+aliases:
+  - /declaration-ia.html
 ---
 
 ## Mise en place du site — 6 novembre 2026

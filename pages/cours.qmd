@@ -1,6 +1,8 @@
 ---
 title: "Le cours STT-6230"
 subtitle: "Modules, défis, jalons et projet"
+aliases:
+  - /cours.html
 ---
 
 ## Des premières données à l’automatisation
@@ -23,7 +25,7 @@ La chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle se
 
 **Défi 1.** Le retour sur cette première évaluation fait ressortir trois points à travailler, soit la validation des résultats, la documentation des choix et la reproductibilité. L’entraînement de la semaine 7 a notamment servi à corriger l’appel à un script depuis Quarto.
 
-**Défi 2.** Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La [réalisation détaillée](defi-2.qmd) explique comment ces contrôles ont orienté le choix de la jointure.
+**Défi 2.** Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La [réalisation détaillée](realisations/defi-2.qmd) explique comment ces contrôles ont orienté le choix de la jointure.
 
 ## Les jalons du portfolio
 
@@ -35,6 +37,6 @@ La chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle se
 
 Le projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.
 
-L’application relève du travail collectif. Ma contribution présentée ici porte sur la [collecte automatisée des indicateurs d’urgence avec GitHub Actions](github-actions.qmd).
+L’application relève du travail collectif. Ma contribution présentée ici porte sur la [collecte automatisée des indicateurs d’urgence avec GitHub Actions](realisations/github-actions.qmd).
 
 [Consulter le site du cours](https://aureliennicosiaulaval.github.io/programmation-pour-la-science-des-donnees/).

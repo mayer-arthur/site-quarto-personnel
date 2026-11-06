@@ -1,6 +1,18 @@
 # Site Quarto personnel — Arthur Mayer
 
-Site du cours STT-6230 à l’Université Laval, automne 2026. La page [Le cours](cours.qmd) rassemble les modules, les défis, les jalons et le projet. Les deux réalisations sont le [Défi 2](defi-2.qmd) et la [collecte GitHub Actions](github-actions.qmd).
+Site du cours STT-6230 à l’Université Laval, automne 2026. La page [Le cours](pages/cours.qmd) rassemble les modules, les défis, les jalons et le projet. Les deux réalisations sont le [Défi 2](pages/realisations/defi-2.qmd) et la [collecte GitHub Actions](pages/realisations/github-actions.qmd).
+
+## Où trouver les fichiers
+
+| Emplacement | Contenu |
+|---|---|
+| [index.qmd](index.qmd) | Source de la page d’accueil. |
+| [pages/](pages/) | Cours, parcours et déclaration IA. |
+| [pages/realisations/](pages/realisations/) | Sommaire, Défi 2 et GitHub Actions. |
+| [atelier/](atelier/) | Prompts, agents, skills, traces et suivi. |
+| [docs/](docs/) | Site généré. Ouvrir [index.html](docs/index.html) pour le consulter. |
+
+Modifie les fichiers `.qmd` pour changer le contenu. Quarto régénère les fichiers HTML dans `docs/`.
 
 ## Rendre le site
 
@@ -11,8 +23,7 @@ Si OneDrive refuse le remplacement de `docs/` ou du cache, voici la procédure P
 ```powershell
 $stage = Join-Path (Get-Location).Path ('.quarto/stage-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
-Get-ChildItem -Path '*.qmd','_quarto.yml','.nojekyll' -Force |
-  Copy-Item -Destination $stage -Force
+Copy-Item -LiteralPath 'index.qmd','_quarto.yml','.nojekyll','pages' -Destination $stage -Recurse -Force
 & 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/quarto.exe' render $stage
 if ($LASTEXITCODE -ne 0) { throw 'Le rendu a échoué.' }
 Get-ChildItem -LiteralPath (Join-Path $stage 'docs') -Force |
@@ -27,7 +38,7 @@ Inclure les ressources des pages dans la copie si de nouveaux fichiers sont ajou
 
 - [AGENTS.md](AGENTS.md) oriente les demandes vers l’agent Sources ou l’agent Quarto. Les prompts invoquent les rôles et leurs skills par chemin.
 - [Prompts](atelier/CONTEXTE.md) pour documenter une semaine ou développer une réalisation.
-- [Progression](progression.md), [AI-log](ai-log.md) et [registre des traces](atelier/sources/traces.md) pour retrouver l’état du travail et les preuves.
+- [Progression](atelier/suivi/progression.md), [AI-log](atelier/suivi/ai-log.md) et [registre des traces](atelier/sources/traces.md) pour retrouver l’état du travail et les preuves.
 
 Les dépôts voisins du portfolio et du projet servent de sources en lecture seule.
 

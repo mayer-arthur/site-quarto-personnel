@@ -4,10 +4,10 @@ Ce dépôt contient les sources du site Quarto. Tout travail d’écriture, de r
 
 | Tâche | Point d’entrée |
 |---|---|
-| Reprendre la session | [progression.md](progression.md) |
+| Reprendre la session | [progression.md](atelier/suivi/progression.md) |
 | Extraire des traces | [Agent Sources](atelier/sources/AGENTS.md) |
 | Rédiger ou vérifier le site | [Agent Quarto](atelier/quarto/AGENTS.md) |
 | Rejouer un prompt | [Prompts](atelier/CONTEXTE.md) |
-| Documenter un usage d’IA | [ai-log.md](ai-log.md) |
+| Documenter un usage d’IA | [ai-log.md](atelier/suivi/ai-log.md) |
 
 Le site couvre le cours, les défis, les jalons et le projet. Les études de cas retenues sont le Défi 2 et la contribution GitHub Actions documentée dans `GitAction`. Les fichiers publics sont déclarés dans [_quarto.yml](_quarto.yml).
