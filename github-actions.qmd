@@ -1,0 +1,28 @@
+---
+title: "GitHub Actions pour le projet"
+subtitle: "Construire un historique des urgences à partir de relevés réguliers"
+---
+
+## Contexte et contribution
+
+Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation.
+
+## De la collecte au CSV
+
+1. Le workflow peut être lancé manuellement et prévoit trois passages quotidiens, à 3 h 55, 11 h 55 et 20 h 55, heure de Toronto.
+2. Le script R récupère les indicateurs et conserve la première observation par couple date de collecte et région.
+3. Le workflow ajoute uniquement le CSV historique à l’index Git et crée un commit si son contenu a changé.
+
+## Justification technique
+
+La clé **date–région** fixe une unité simple pour une analyse quotidienne. Trois passages offrent plusieurs occasions de collecter, mais le CSV quotidien conserve une seule observation par région. Une clé avec horodatage conserverait les variations au cours de la journée et permettrait de comparer les passages. Elle demanderait une règle supplémentaire pour résumer ou comparer ces relevés à l’échelle quotidienne.
+
+## Validation et limite
+
+Une inspection du CSV local lors de la préparation du site a trouvé **400 lignes sur 25 jours**, du 8 octobre au 1er novembre 2026, avec **16 régions par jour** et **aucun doublon** sur la clé date–région. Les trois indicateurs étaient manquants pour les 25 lignes d’une région. L’effectif attendu confirme la couverture des lignes, tandis qu’un contrôle des valeurs manquantes mesure la complétude des indicateurs.
+
+Cette inspection porte sur un instantané du CSV. Les horaires correspondent à la configuration du workflow et aucune collecte distante n’a été déclenchée pour ce contrôle.
+
+## Trace du projet
+
+Le guide « Explication de la collecte » dans `GitAction` documente le script R et son workflow. Le commit `9be82a3` du 1er novembre retrace la révision du script et du guide.

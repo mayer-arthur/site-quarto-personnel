@@ -1,0 +1,10 @@
+---
+title: "Programmer pour la science des données"
+subtitle: "Arthur Mayer · Université Laval · Automne 2026"
+---
+
+Ce site retrace mon parcours dans le cours STT-6230 à l’Université Laval. Il rassemble les apprentissages du cours, les défis individuels et les jalons du projet d’équipe.
+
+- [Suivre le cours](cours.qmd) pour retrouver les modules, les défis et les jalons.
+- [Voir mes réalisations](realisations.qmd) pour explorer le Défi 2 et ma contribution GitHub Actions.
+- [Voir mon parcours](parcours.qmd) pour un aperçu des compétences mobilisées.

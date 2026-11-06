@@ -1,0 +1,11 @@
+---
+title: "Deux réalisations"
+---
+
+## [Défi 2 — vérifier une jointure et ses calculs](defi-2.qmd)
+
+Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs.
+
+## [Projet — GitHub Actions](github-actions.qmd)
+
+Une contribution au projet d’équipe centrée sur l’automatisation des vérifications dans GitHub.

@@ -1,0 +1,15 @@
+---
+title: "Déclaration d’utilisation de l’IA"
+---
+
+## Mise en place du site — 6 novembre 2026
+
+- **Outil** — OpenAI Codex et deux sous-agents de recherche.
+- **Tâche** — préparer la structure Quarto, relever les traces dans les dépôts du cours et rédiger une première version des pages.
+- **Éléments conservés** — organisation du site, synthèses initiales et procédures de rédaction et de vérification.
+- **Vérifications** — rapprochement des pages avec le gabarit et les traces des dépôts. Les résultats des travaux du cours sont présentés d’après ces traces.
+- **Modifications apportées** — le gabarit a été adapté pour donner au cours une page dédiée et aux deux réalisations des pages distinctes.
+
+## Usage documenté pendant le Défi 2
+
+Le journal du portfolio distingue deux usages de ChatGPT. Le 20 octobre, l’aide portait sur l’entraînement et la formulation des demandes. Le 21 octobre, elle touchait le code R, les jointures et leurs contrôles, les calculs, la figure et le rapport Quarto. Le bilan et le rapport documentent les contrôles d’effectif, le traitement du lot L10 et le calcul indépendant pour L01.

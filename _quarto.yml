@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - parcours.qmd
+    - cours.qmd
+    - realisations.qmd
+    - defi-2.qmd
+    - github-actions.qmd
+    - declaration-ia.qmd
+
+lang: fr
+
+website:
+  title: "Mon parcours en science des données"
+  navbar:
+    left:
+      - text: Accueil
+        href: index.qmd
+      - text: Parcours
+        href: parcours.qmd
+      - text: Le cours
+        href: cours.qmd
+      - text: Réalisations
+        href: realisations.qmd
+      - text: Déclaration IA
+        href: declaration-ia.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true

@@ -1,0 +1,12 @@
+---
+title: "Parcours et compétences"
+---
+
+Le [parcours dans le cours](cours.qmd) relie quatre compétences que j’ai mobilisées au fil de la session.
+
+| Compétence | Exemple |
+|---|---|
+| Préparer des données | Importer, transformer et restructurer des tables en R. |
+| Vérifier une analyse | Contrôler les clés de jointure et refaire un calcul de référence dans le [Défi 2](defi-2.qmd). |
+| Communiquer des résultats | Produire des graphiques et des rapports avec Quarto. |
+| Automatiser des vérifications | Mettre en place un [workflow GitHub Actions](github-actions.qmd) pour le projet d’équipe. |

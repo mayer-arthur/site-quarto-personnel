@@ -1,0 +1,29 @@
+---
+title: "Défi 2"
+subtitle: "Une jointure fiable pour comparer deux scénarios tarifaires"
+---
+
+## Contexte et production
+
+L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.
+
+## Le choix technique
+
+Un même code tarifaire peut apparaître dans plusieurs tables. La jointure sur le code seul a produit 25 lignes pour le scénario après, alors que j’en attendais 10. La paire `source_table` et `code_tarifaire` identifie le tarif dans la bonne table. J’ai traité le code comme du texte pour conserver ses zéros initiaux.
+
+| Contrôle | Résultat documenté |
+|---|---|
+| Effectif après jointure | 10 lots par scénario avec la clé composite. |
+| Calcul indépendant | Pour L01, 40 000 × 50 % donne 20 000 CAD. |
+| Valeur inconnue | Le montant de L10 est conservé comme manquant. |
+| Sous-total des neuf lots calculables | 32 500 CAD avant et 61 750 CAD après, soit un écart de 29 250 CAD. |
+
+## Ce que cette réalisation montre
+
+effectif’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.
+
+## Trace et limite
+
+Le bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.
+
+La préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. [Voir la déclaration IA du site](declaration-ia.qmd).

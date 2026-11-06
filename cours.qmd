@@ -1,0 +1,40 @@
+---
+title: "Le cours STT-6230"
+subtitle: "Modules, défis, jalons et projet"
+---
+
+## Des premières données à l’automatisation
+
+| Semaine | Travail documenté | Compétence mise en pratique |
+|---|---|---|
+| 1 | Mise en place du portfolio et prise en main de GitHub. | Organiser et versionner le travail. |
+| 2 | Importation et exportation de données de formats variés. | Choisir la fonction de lecture d’après le contenu du fichier. |
+| 3 | Exercices de calcul mathématique et statistique. | Traduire une démarche de calcul en R. |
+| 4 | Prétraitement et comparaison de `reshape()` et `pivot_wider()`. | Comparer les résultats après avoir harmonisé leur ordre et leur structure. |
+| 5 | Retour sur le Défi 1. | Repérer les contrôles et les explications qui manquaient à l’analyse. |
+| 6 | Exercices de visualisation. | Mettre en forme des données pour les communiquer. |
+| 7 | Rapport Quarto sur les séismes et entraînement au Défi 2. | Rendre un rapport depuis les sources et corriger des chemins relatifs. |
+| 8 | Défi 2 sur les tarifs et les lots. | Vérifier une clé de jointure, les effectifs et un calcul de référence. |
+| 9 | Exercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon. | Comparer plusieurs façons de parcourir une liste. |
+
+La chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle sera complétée à mesure que les traces de fin de session seront disponibles.
+
+## Les défis
+
+**Défi 1.** Le retour sur cette première évaluation fait ressortir trois points à travailler, soit la validation des résultats, la documentation des choix et la reproductibilité. L’entraînement de la semaine 7 a notamment servi à corriger l’appel à un script depuis Quarto.
+
+**Défi 2.** Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La [réalisation détaillée](defi-2.qmd) explique comment ces contrôles ont orienté le choix de la jointure.
+
+## Les jalons du portfolio
+
+- **Semaine 3 — démarrage.** Mettre en place le portfolio et constituer les premières traces.
+- **Semaine 9 — progression.** Revenir sur les difficultés rencontrées et relier les améliorations à des preuves, comme la comparaison de mises en forme et le rendu du rapport de la semaine 7.
+- **Semaine 14 — bilan final à venir.** Relire l’ensemble du parcours, choisir les preuves les plus parlantes et vérifier la cohérence des liens et de la documentation.
+
+## Le projet d’équipe
+
+Le projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.
+
+L’application relève du travail collectif. Ma contribution présentée ici porte sur la [collecte automatisée des indicateurs d’urgence avec GitHub Actions](github-actions.qmd).
+
+[Consulter le site du cours](https://aureliennicosiaulaval.github.io/programmation-pour-la-science-des-donnees/).
