@@ -137,3 +137,153 @@ main table thead th {
   .home-grid { grid-template-columns: 1fr; }
   .site-hero { margin-bottom: 1.5rem; }
 }
+
+/* Navigation et rythme des pages. */
+html { scroll-padding-top: 6rem; }
+body { font-family: "Segoe UI", system-ui, sans-serif; }
+#quarto-header .navbar {
+  padding-block: .8rem;
+  box-shadow: 0 4px 18px #27181e1a;
+}
+#quarto-header .navbar-brand {
+  max-width: min(28rem, 70vw);
+  white-space: normal;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+#quarto-header .navbar-nav { gap: .2rem; }
+#quarto-header .navbar .nav-link {
+  padding: .45rem .7rem;
+  border-radius: .3rem;
+}
+#quarto-header .navbar .nav-link.active {
+  background: #ffffff12;
+  text-decoration-thickness: 2px;
+}
+#quarto-header .navbar .nav-link:hover { background: #ffffff0c; }
+
+main.content { padding-bottom: 3rem; }
+main.content > section { margin-top: 2.25rem; }
+main.content > section > h2 {
+  padding-bottom: .65rem;
+  margin-bottom: 1.1rem;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+}
+main h3 { color: var(--wine-dark); font-size: 1.15rem; font-weight: 650; }
+main p, main li { text-wrap: pretty; }
+main a { text-underline-offset: .18em; }
+main li + li { margin-top: .35rem; }
+
+/* Bandeau commun aux pages intérieures. */
+#title-block-header {
+  position: relative;
+  background: linear-gradient(115deg, var(--wine-dark), var(--wine));
+  color: #fff8f0;
+  border-radius: .75rem;
+  border-bottom: 4px solid var(--gold);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 0 2.5rem;
+  box-shadow: 0 12px 30px #4910230d;
+}
+#title-block-header h1 {
+  color: inherit;
+  line-height: 1.15;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: -.025em;
+  margin-bottom: .5rem;
+}
+#title-block-header .subtitle {
+  color: #f3ded9;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+#title-block-header .quarto-title-meta:empty { display: none; }
+
+/* Sommaire et tableaux. */
+#TOC {
+  border-left: 1px solid var(--line);
+  padding: .7rem 0 .7rem .8rem;
+  font-size: .85rem;
+}
+#TOC h2 {
+  font-size: .73rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--wine);
+  margin-bottom: .8rem;
+}
+#TOC a { line-height: 1.5; }
+main table {
+  margin-block: 1.5rem;
+  font-size: .92rem;
+  border-bottom: 2px solid var(--line);
+}
+main table th, main table td { padding: .85rem 1rem; }
+main table thead th {
+  background: var(--wine-dark);
+  color: #fff8f0;
+  font-weight: 600;
+  border-bottom: 3px solid var(--gold);
+}
+main table tbody tr:nth-child(even) td { background: #f3eae0; }
+main :not(pre) > code {
+  color: #6c1930;
+  background: #efe3dc;
+  border-radius: .2rem;
+  padding: .1em .3em;
+}
+main blockquote {
+  color: var(--ink);
+  border-left: 3px solid #b57a37;
+  background: #f2e9dc;
+  padding: 1rem 1.25rem;
+  border-radius: 0 .4rem .4rem 0;
+}
+
+/* Accueil et cartes. */
+.site-hero { box-shadow: 0 16px 40px #49102314; }
+.home-grid { gap: 1.25rem; }
+.home-card {
+  padding: 1.55rem;
+  border-top-color: var(--wine);
+  box-shadow: 0 5px 16px #49102306;
+}
+.home-card h3 a { text-decoration: none; }
+.home-card h3 a:hover { text-decoration: underline; }
+.home-card p { color: #514347; font-size: .95rem; }
+
+/* Bandeau de bas de page. */
+footer.footer {
+  background: #27181e;
+  color: #e8dcd5;
+  border-top: 3px solid #b57a37;
+}
+.nav-footer { padding: 1.4rem max(1.25rem, 4vw); gap: 1rem; }
+.nav-footer, .nav-footer p { color: #e8dcd5; font-size: .85rem; }
+.nav-footer a { color: var(--gold); text-underline-offset: .2em; }
+.nav-footer a:hover { color: #fff8f0; }
+.nav-footer :focus-visible { outline-color: var(--gold); }
+
+@media (max-width: 991px) {
+  #quarto-header .navbar-collapse { padding-top: .75rem; }
+  #quarto-header .navbar .nav-link { padding: .65rem .75rem; }
+}
+@media (max-width: 720px) {
+  #title-block-header { margin-bottom: 1.75rem; }
+  main.content > section { margin-top: 1.75rem; }
+  .home-card { padding: 1.25rem; }
+  main table { display: block; max-width: 100%; overflow-x: auto; }
+  main table th, main table td { min-width: 8rem; }
+  .nav-footer { flex-direction: column; align-items: center; text-align: center; }
+  .nav-footer > div { text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+}
+@media print {
+  #title-block-header, .site-hero { background: white; color: black; box-shadow: none; }
+  #title-block-header h1, #title-block-header .subtitle, .site-hero h1, .hero-label { color: black; }
+  .home-card { box-shadow: none; }
+}

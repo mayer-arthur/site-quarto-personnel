@@ -20,3 +20,7 @@ Pour chaque nouvelle séance, noter la page touchée, la preuve et le résultat 
 ## Présentation visuelle
 
 La palette et la mise en page sont centralisées dans `assets/styles.css`. Le rendu des sept pages et les liens locaux ont été vérifiés.
+
+## 7 novembre 2026 — Structure visuelle
+
+Navigation, bandeaux, tableaux, cartes et pied de page partagent la palette bordeaux, or, noir et ivoire. Les variantes pour les petits écrans sont dans la feuille de style.

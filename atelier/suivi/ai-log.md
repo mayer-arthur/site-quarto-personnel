@@ -18,3 +18,7 @@ Codex a regroupé les sources Quarto et les fichiers de suivi à la demande d’
 ## 6 novembre 2026 — Refonte visuelle
 
 Codex a adapté la palette proposée par Arthur et créé la feuille de style ainsi que le bandeau et les cartes de l’accueil. Le rendu Quarto, la structure HTML et les ressources locales des sept pages ont été vérifiés. Le navigateur intégré a bloqué l’aperçu du fichier local.
+
+## 7 novembre 2026 — Harmonisation de la présentation
+
+À la demande d’Arthur, Codex a harmonisé la navigation, les bandeaux des pages intérieures, le sommaire, les tableaux, les cartes et le pied de page. Les règles pour les petits écrans sont centralisées dans la feuille de style.

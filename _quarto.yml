@@ -14,6 +14,12 @@ lang: fr
 
 website:
   title: "Mon parcours en science des données"
+  page-footer:
+    left: "Arthur Mayer · STT-6230"
+    center: "Université Laval · Automne 2026"
+    right:
+      - text: Déclaration IA
+        href: pages/declaration-ia.qmd
   navbar:
     left:
       - text: Accueil
