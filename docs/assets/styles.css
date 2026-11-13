@@ -379,3 +379,90 @@ img.realisation-visuel { max-width: 40rem; margin: 1.5rem auto; }
 @media (max-width: 720px) {
   .realisations-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Cartes filtrables du cours. */
+[hidden] { display: none !important; }
+.filtre-boutons { display: flex; gap: .5rem; flex-wrap: wrap; }
+.filtre-boutons button {
+  border: 1px solid var(--line);
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  background: #fffaf4;
+  color: var(--wine-dark);
+  font: inherit;
+  cursor: pointer;
+}
+.filtre-boutons button[aria-pressed="true"] {
+  background: var(--wine-dark);
+  color: #fff8f0;
+  border-color: var(--wine-dark);
+}
+.filtre-boutons button:hover { border-color: var(--wine); }
+.filtre-compteur { color: #685258; font-size: .85rem; margin-top: .7rem; }
+.semaines-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.semaine-carte {
+  min-width: 0;
+  padding: 1.3rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid #b57a37;
+  border-radius: .6rem;
+  background: #fffaf4;
+}
+.semaine-carte h3 { margin-top: 0; }
+.semaine-themes { color: var(--wine); font-size: .78rem; font-weight: 700; }
+.semaine-carte details { border-top: 1px solid var(--line); padding-top: .7rem; }
+.semaine-carte summary { color: var(--wine); font-weight: 650; cursor: pointer; }
+.semaine-carte details > p { font-size: .85rem; }
+.semaine-carte pre { max-width: 100%; overflow-x: auto; font-size: .8rem; }
+
+/* Démonstration de jointure. */
+.jointure-demo { padding: 1.3rem; border: 1px solid var(--line); border-radius: .7rem; background: #fffaf4; }
+.demo-tables { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.demo-tables > div { min-width: 0; }
+.demo-tables table { width: 100%; }
+.demo-tables th, .demo-tables td { padding: .5rem; }
+.demo-cle { border: 1px solid var(--line); padding: 1rem; border-radius: .4rem; }
+.demo-cle legend { float: none; width: auto; padding: 0 .3rem; font-size: 1rem; font-weight: 700; }
+.demo-cle label { display: inline-block; margin: .3rem 1rem .3rem 0; cursor: pointer; }
+.demo-doublon { display: block; margin-block: 1rem; cursor: pointer; }
+.jointure-demo input { accent-color: var(--wine); }
+.demo-statut { padding: 1rem; border-left: 4px solid #617246; background: #edf0e4; font-weight: 700; }
+.demo-statut[data-etat="alerte"] { border-color: #a54b25; background: #f9eadc; }
+.demo-resultat { max-width: 100%; overflow-x: auto; }
+.demo-resultat table { min-width: 35rem; width: 100%; }
+.demo-resultat .jointure-incoherente td { background: #f8e0dc; }
+.jointure-demo pre { padding: 1rem; background: #f2e9dc; border-radius: .4rem; overflow-x: auto; }
+.jointure-demo caption { font-size: .85rem; }
+
+/* Parcours du projet. */
+.projet-parcours { list-style: none; counter-reset: projet; padding-left: 0; margin-block: 2rem; }
+.projet-parcours > .projet-etape {
+  counter-increment: projet;
+  position: relative;
+  border-left: 2px solid #b57a37;
+  padding: 0 0 2rem 2.25rem;
+  margin-left: 1rem;
+}
+.projet-parcours > .projet-etape::before {
+  content: counter(projet);
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--wine-dark);
+  color: var(--gold);
+  border-radius: 50%;
+  font-weight: 700;
+}
+.projet-parcours > .projet-etape:last-child { border-left-color: transparent; padding-bottom: 0; }
+.projet-parcours h3 { margin-top: 0; padding-top: .2rem; }
+@media (max-width: 720px) {
+  .semaines-grid, .demo-tables { grid-template-columns: 1fr; }
+  .demo-tables table { display: table; }
+  .demo-tables th, .demo-tables td { min-width: 0; }
+  .jointure-demo { padding: .9rem; }
+}

@@ -2,7 +2,7 @@
 
 Site du cours STT-6230 à l’Université Laval, automne 2026. La page [Le cours](pages/cours.qmd) rassemble les modules, les défis, les jalons et le projet. Les deux réalisations sont le [Défi 2](pages/realisations/defi-2.qmd) et la [collecte GitHub Actions](pages/realisations/github-actions.qmd).
 
-La page [Parcours](pages/parcours.qmd) présente quatre étapes d’apprentissage. La chronologie du cours couvre les semaines 1 à 10.
+La page [Parcours](pages/parcours.qmd) présente quatre étapes d’apprentissage. Le cours présente les semaines 1 à 10 dans des cartes filtrables avec extraits de code et traces. Le [projet d’équipe](pages/projet.qmd) dispose d’un parcours visuel.
 
 Le site est publié sur [GitHub Pages](https://mayer-arthur.github.io/site-quarto-personnel/). Pour le mettre à jour, régénérer `docs/`, puis inclure les sources et le rendu dans le commit et le push.
 
@@ -13,6 +13,7 @@ Le site est publié sur [GitHub Pages](https://mayer-arthur.github.io/site-quart
 | [index.qmd](index.qmd) | Source de la page d’accueil. |
 | [pages/](pages/) | Cours, parcours et déclaration IA. |
 | [pages/realisations/](pages/realisations/) | Sommaire, Défi 2 et GitHub Actions. |
+| [assets/interactions.js](assets/interactions.js) | Filtres des semaines et démonstration de jointure. |
 | [assets/visuels/](assets/visuels/) | Aperçus SVG des réalisations. |
 | [assets/favicon.svg](assets/favicon.svg) | Icône de l’onglet. |
 | [assets/styles.css](assets/styles.css) | Palette et mise en page du site. |

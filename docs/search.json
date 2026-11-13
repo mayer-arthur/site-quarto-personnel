@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "pages/realisations/defi-2.html",
+    "href": "pages/realisations/defi-2.html",
+    "title": "Défi 2",
+    "section": "",
+    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
+  },
+  {
+    "objectID": "pages/realisations/defi-2.html#contexte-et-production",
+    "href": "pages/realisations/defi-2.html#contexte-et-production",
+    "title": "Défi 2",
+    "section": "",
+    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
+  },
+  {
+    "objectID": "pages/realisations/defi-2.html#le-choix-technique",
+    "href": "pages/realisations/defi-2.html#le-choix-technique",
+    "title": "Défi 2",
+    "section": "Le choix technique",
+    "text": "Le choix technique\nUn même code tarifaire peut apparaître dans plusieurs tables. La jointure sur le code seul a produit 25 lignes pour le scénario après, alors que j’en attendais 10. La paire source_table et code_tarifaire identifie le tarif dans la bonne table. J’ai traité le code comme du texte pour conserver ses zéros initiaux.\n\n\n\n\n\n\n\nContrôle\nRésultat documenté\n\n\n\n\nEffectif après jointure\n10 lots par scénario avec la clé composite.\n\n\nCalcul indépendant\nPour L01, 40 000 × 50 % donne 20 000 CAD.\n\n\nValeur inconnue\nLe montant de L10 est conservé comme manquant.\n\n\nSous-total des neuf lots calculables\n32 500 CAD avant et 61 750 CAD après, soit un écart de 29 250 CAD."
+  },
+  {
+    "objectID": "pages/realisations/defi-2.html#essayer-une-jointure",
+    "href": "pages/realisations/defi-2.html#essayer-une-jointure",
+    "title": "Défi 2",
+    "section": "Essayer une jointure",
+    "text": "Essayer une jointure\nCet exemple utilise trois lots et des tarifs fictifs pour rendre le mécanisme visible. Dans le rapport du Défi 2, les effectifs documentés sont de 25 lignes avec le code seul et de 10 avec la clé composite pour le scénario après.\n\n  \n    \n      Les lots\n      \n\nTrois lots fictifs\n\n\nLot\nSource\nCode\n\n\n\n\nL01\nA\n001\n\n\nL02\nB\n001\n\n\nL03\nA\n002\n\n\n\n\n    \n    \n      Les tarifs\n      \n\nTarifs fictifs de deux sources\n\n\nSource\nCode\nTaux\n\n\n\n\nA\n001\n10 %\n\n\nB\n001\n20 %\n\n\nA\n002\n5 %\n\n\n\n\n    \n  \n  \n    \n      Choisir la clé de jointure\n       Code seul\n       Source + code\n    \n     Ajouter un doublon exact A + 001 dans les tarifs\n  \n  \n    \n    \n    \n    \n      \n\nCorrespondances obtenues\n\n\nLot\nSource du lot\nCode\nSource du tarif\nTaux\nCorrespondance\n\n\n\n\n\n\n    \n  \n  Active JavaScript pour changer la clé et voir les correspondances. Le code seul peut associer un lot au tarif d’une autre source. La clé composite demande également une référence sans doublon."
+  },
+  {
+    "objectID": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
+    "href": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
+    "title": "Défi 2",
+    "section": "Ce que cette réalisation montre",
+    "text": "Ce que cette réalisation montre\nLe contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant."
+  },
+  {
+    "objectID": "pages/realisations/defi-2.html#trace-et-limite",
+    "href": "pages/realisations/defi-2.html#trace-et-limite",
+    "title": "Défi 2",
+    "section": "Trace et limite",
+    "text": "Trace et limite\nLe bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.\nLa préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. Voir la déclaration IA du site."
+  },
+  {
     "objectID": "pages/declaration-ia.html",
     "href": "pages/declaration-ia.html",
     "title": "Déclaration d’utilisation de l’IA",
@@ -42,95 +84,32 @@
     "text": "Aperçus et navigation — 13 novembre 2026\nCodex a rédigé une courte présentation à partir des informations du parcours, ajouté un bloc d’actualité daté et organisé le menu des réalisations. Deux schémas SVG synthétisent des éléments déjà documentés, soit le contrôle d’effectif du Défi 2 et les étapes de la collecte GitHub Actions. Codex a aussi produit l’icône de l’onglet et retiré les mentions nominatives des déclarations et du journal IA du site."
   },
   {
-    "objectID": "pages/realisations/defi-2.html",
-    "href": "pages/realisations/defi-2.html",
-    "title": "Défi 2",
+    "objectID": "pages/declaration-ia.html#exploration-du-cours-et-démonstration-13-novembre-2026",
+    "href": "pages/declaration-ia.html#exploration-du-cours-et-démonstration-13-novembre-2026",
+    "title": "Déclaration d’utilisation de l’IA",
+    "section": "Exploration du cours et démonstration — 13 novembre 2026",
+    "text": "Exploration du cours et démonstration — 13 novembre 2026\nCodex a sélectionné de courts extraits dans les scripts du portfolio et ajouté des cartes filtrables pour les dix semaines documentées. Les semaines principalement documentaires conservent une trace explicative. L’extrait de semaine 8 est identifié comme une proposition incorrecte analysée dans le rapport.\nLa démonstration de jointure utilise trois lots et des tarifs fictifs créés pour expliquer les correspondances et l’effet d’un doublon. Ses effectifs sont distincts de ceux du rapport du Défi 2. Codex a produit le JavaScript, la présentation et la page projet à partir des sources inspectées."
+  },
+  {
+    "objectID": "pages/realisations/index.html",
+    "href": "pages/realisations/index.html",
+    "title": "Deux réalisations",
     "section": "",
-    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
+    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2\n\n\n\n\n\n\nTrois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
   },
   {
-    "objectID": "pages/realisations/defi-2.html#contexte-et-production",
-    "href": "pages/realisations/defi-2.html#contexte-et-production",
-    "title": "Défi 2",
+    "objectID": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
+    "href": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
+    "title": "Deux réalisations",
     "section": "",
-    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
+    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2"
   },
   {
-    "objectID": "pages/realisations/defi-2.html#le-choix-technique",
-    "href": "pages/realisations/defi-2.html#le-choix-technique",
-    "title": "Défi 2",
-    "section": "Le choix technique",
-    "text": "Le choix technique\nUn même code tarifaire peut apparaître dans plusieurs tables. La jointure sur le code seul a produit 25 lignes pour le scénario après, alors que j’en attendais 10. La paire source_table et code_tarifaire identifie le tarif dans la bonne table. J’ai traité le code comme du texte pour conserver ses zéros initiaux.\n\n\n\n\n\n\n\nContrôle\nRésultat documenté\n\n\n\n\nEffectif après jointure\n10 lots par scénario avec la clé composite.\n\n\nCalcul indépendant\nPour L01, 40 000 × 50 % donne 20 000 CAD.\n\n\nValeur inconnue\nLe montant de L10 est conservé comme manquant.\n\n\nSous-total des neuf lots calculables\n32 500 CAD avant et 61 750 CAD après, soit un écart de 29 250 CAD."
-  },
-  {
-    "objectID": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
-    "href": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
-    "title": "Défi 2",
-    "section": "Ce que cette réalisation montre",
-    "text": "Ce que cette réalisation montre\nLe contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant."
-  },
-  {
-    "objectID": "pages/realisations/defi-2.html#trace-et-limite",
-    "href": "pages/realisations/defi-2.html#trace-et-limite",
-    "title": "Défi 2",
-    "section": "Trace et limite",
-    "text": "Trace et limite\nLe bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.\nLa préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. Voir la déclaration IA du site."
-  },
-  {
-    "objectID": "pages/cours.html",
-    "href": "pages/cours.html",
-    "title": "Le cours STT-6230",
+    "objectID": "pages/realisations/index.html#projet-github-actions",
+    "href": "pages/realisations/index.html#projet-github-actions",
+    "title": "Deux réalisations",
     "section": "",
-    "text": "Semaine\nTravail documenté\nCompétence mise en pratique\n\n\n\n\n1\nMise en place du portfolio et prise en main de GitHub.\nOrganiser et versionner le travail.\n\n\n2\nImportation et exportation de données de formats variés.\nChoisir la fonction de lecture d’après le contenu du fichier.\n\n\n3\nExercices de calcul mathématique et statistique.\nTraduire une démarche de calcul en R.\n\n\n4\nPrétraitement et comparaison de reshape() et pivot_wider().\nComparer les résultats après avoir harmonisé leur ordre et leur structure.\n\n\n5\nRetour sur le Défi 1.\nRepérer les contrôles et les explications qui manquaient à l’analyse.\n\n\n6\nExercices de visualisation.\nMettre en forme des données pour les communiquer.\n\n\n7\nRapport Quarto sur les séismes et entraînement au Défi 2.\nRendre un rapport depuis les sources et corriger des chemins relatifs.\n\n\n8\nDéfi 2 sur les tarifs et les lots.\nVérifier une clé de jointure, les effectifs et un calcul de référence.\n\n\n9\nExercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon.\nComparer plusieurs façons de parcourir une liste.\n\n\n10\nExercices 1 à 8 du laboratoire commun aux modules 10 et 11, méthodes S3, exploration S4 et coefficient d’asymétrie.\nComparer un calcul à une référence et à une simulation, examiner les valeurs manquantes et interpréter les tests avec testthat.\n\n\n\nLa chronologie reflète les travaux documentés jusqu’à la semaine 10. Elle sera complétée à mesure que les traces de fin de session seront disponibles.\nLa semaine 10 est terminée selon mon suivi actuel. Les échecs et l’erreur rapportés par les tests concernent la version de départ étudiée dans le laboratoire. Les corrections de cette fonction font partie des exercices suivants."
-  },
-  {
-    "objectID": "pages/cours.html#des-premières-données-à-lautomatisation",
-    "href": "pages/cours.html#des-premières-données-à-lautomatisation",
-    "title": "Le cours STT-6230",
-    "section": "",
-    "text": "Semaine\nTravail documenté\nCompétence mise en pratique\n\n\n\n\n1\nMise en place du portfolio et prise en main de GitHub.\nOrganiser et versionner le travail.\n\n\n2\nImportation et exportation de données de formats variés.\nChoisir la fonction de lecture d’après le contenu du fichier.\n\n\n3\nExercices de calcul mathématique et statistique.\nTraduire une démarche de calcul en R.\n\n\n4\nPrétraitement et comparaison de reshape() et pivot_wider().\nComparer les résultats après avoir harmonisé leur ordre et leur structure.\n\n\n5\nRetour sur le Défi 1.\nRepérer les contrôles et les explications qui manquaient à l’analyse.\n\n\n6\nExercices de visualisation.\nMettre en forme des données pour les communiquer.\n\n\n7\nRapport Quarto sur les séismes et entraînement au Défi 2.\nRendre un rapport depuis les sources et corriger des chemins relatifs.\n\n\n8\nDéfi 2 sur les tarifs et les lots.\nVérifier une clé de jointure, les effectifs et un calcul de référence.\n\n\n9\nExercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon.\nComparer plusieurs façons de parcourir une liste.\n\n\n10\nExercices 1 à 8 du laboratoire commun aux modules 10 et 11, méthodes S3, exploration S4 et coefficient d’asymétrie.\nComparer un calcul à une référence et à une simulation, examiner les valeurs manquantes et interpréter les tests avec testthat.\n\n\n\nLa chronologie reflète les travaux documentés jusqu’à la semaine 10. Elle sera complétée à mesure que les traces de fin de session seront disponibles.\nLa semaine 10 est terminée selon mon suivi actuel. Les échecs et l’erreur rapportés par les tests concernent la version de départ étudiée dans le laboratoire. Les corrections de cette fonction font partie des exercices suivants."
-  },
-  {
-    "objectID": "pages/cours.html#les-défis",
-    "href": "pages/cours.html#les-défis",
-    "title": "Le cours STT-6230",
-    "section": "Les défis",
-    "text": "Les défis\nDéfi 1. Le retour sur cette première évaluation fait ressortir trois points à travailler, soit la validation des résultats, la documentation des choix et la reproductibilité. L’entraînement de la semaine 7 a notamment servi à corriger l’appel à un script depuis Quarto.\nDéfi 2. Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La réalisation détaillée explique comment ces contrôles ont orienté le choix de la jointure."
-  },
-  {
-    "objectID": "pages/cours.html#les-jalons-du-portfolio",
-    "href": "pages/cours.html#les-jalons-du-portfolio",
-    "title": "Le cours STT-6230",
-    "section": "Les jalons du portfolio",
-    "text": "Les jalons du portfolio\n\nSemaine 3 — démarrage. Mettre en place le portfolio et constituer les premières traces.\nSemaine 9 — progression. Revenir sur les difficultés rencontrées et relier les améliorations à des preuves, comme la comparaison de mises en forme et le rendu du rapport de la semaine 7.\nSemaine 14 — bilan final à venir. Relire l’ensemble du parcours, choisir les preuves les plus parlantes et vérifier la cohérence des liens et de la documentation."
-  },
-  {
-    "objectID": "pages/cours.html#le-projet-déquipe",
-    "href": "pages/cours.html#le-projet-déquipe",
-    "title": "Le cours STT-6230",
-    "section": "Le projet d’équipe",
-    "text": "Le projet d’équipe\nLe projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.\nL’application relève du travail collectif. Ma contribution présentée ici porte sur la collecte automatisée des indicateurs d’urgence avec GitHub Actions.\nConsulter le site du cours."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Programmer pour la science des données",
-    "section": "",
-    "text": "Arthur Mayer · Université Laval · Automne 2026\n\n\n\nMon parcours dans le cours STT-6230, des premiers exercices en R à la collecte automatisée de données pour le projet d’équipe.\n\nExplorer le cours Voir mes réalisations"
-  },
-  {
-    "objectID": "index.html#à-propos-de-mon-parcours",
-    "href": "index.html#à-propos-de-mon-parcours",
-    "title": "Programmer pour la science des données",
-    "section": "À propos de mon parcours",
-    "text": "À propos de mon parcours\nJe suis le cours STT-6230 à l’Université Laval. J’y travaille avec R, Quarto et GitHub pour préparer des données, vérifier des résultats et présenter mes analyses. Avec le projet d’équipe, cette démarche s’étend à la collecte automatisée d’indicateurs d’urgence.\nMon objectif est de gagner en autonomie pour expliquer mes choix techniques et refaire les contrôles avec moins d’aide.\n\nEn ce moment\n\nMise à jour du 13 novembre 2026\n\nLa semaine 10 est terminée. Elle complète mon parcours avec les objets R et les tests. Je prépare aussi la présentation de ma contribution GitHub Actions au projet.\nSuivre ma progression dans le cours"
-  },
-  {
-    "objectID": "index.html#du-cours-à-la-pratique",
-    "href": "index.html#du-cours-à-la-pratique",
-    "title": "Programmer pour la science des données",
-    "section": "Du cours à la pratique",
-    "text": "Du cours à la pratique\n\n\nDéfis et jalons\nLes travaux de la session, les difficultés rencontrées et les étapes du projet.\n\n\nDeux réalisations\nUne jointure vérifiée dans le Défi 2 et une collecte quotidienne avec GitHub Actions.\n\n\nParcours et compétences\nPréparer des données, vérifier une analyse et communiquer ses résultats."
+    "text": "Trois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
   },
   {
     "objectID": "pages/parcours.html",
@@ -175,25 +154,46 @@
     "text": "Continuer à gagner en autonomie\nL’aide de l’IA a accompagné plusieurs de ces travaux et figure dans la déclaration d’utilisation. Mon bilan du Défi 2 indique un objectif qui reste pertinent pour la suite, soit pratiquer les étapes pour pouvoir expliquer les choix et refaire les contrôles avec moins d’aide.\nLa suite du cours permettra de prolonger ce parcours avec les prochains exercices, les livrables du projet et le bilan final du portfolio."
   },
   {
-    "objectID": "pages/realisations/index.html",
-    "href": "pages/realisations/index.html",
-    "title": "Deux réalisations",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Programmer pour la science des données",
     "section": "",
-    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2\n\n\n\n\n\n\nTrois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
+    "text": "Arthur Mayer · Université Laval · Automne 2026\n\n\n\nMon parcours dans le cours STT-6230, des premiers exercices en R à la collecte automatisée de données pour le projet d’équipe.\n\nExplorer le cours Voir mes réalisations"
   },
   {
-    "objectID": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
-    "href": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
-    "title": "Deux réalisations",
-    "section": "",
-    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2"
+    "objectID": "index.html#à-propos-de-mon-parcours",
+    "href": "index.html#à-propos-de-mon-parcours",
+    "title": "Programmer pour la science des données",
+    "section": "À propos de mon parcours",
+    "text": "À propos de mon parcours\nJe suis le cours STT-6230 à l’Université Laval. J’y travaille avec R, Quarto et GitHub pour préparer des données, vérifier des résultats et présenter mes analyses. Avec le projet d’équipe, cette démarche s’étend à la collecte automatisée d’indicateurs d’urgence.\nMon objectif est de gagner en autonomie pour expliquer mes choix techniques et refaire les contrôles avec moins d’aide.\n\nEn ce moment\n\nMise à jour du 13 novembre 2026\n\nLa semaine 10 est terminée. Elle complète mon parcours avec les objets R et les tests. Je prépare aussi la présentation de ma contribution GitHub Actions au projet.\nSuivre ma progression dans le cours · Explorer le projet d’équipe"
   },
   {
-    "objectID": "pages/realisations/index.html#projet-github-actions",
-    "href": "pages/realisations/index.html#projet-github-actions",
-    "title": "Deux réalisations",
+    "objectID": "index.html#du-cours-à-la-pratique",
+    "href": "index.html#du-cours-à-la-pratique",
+    "title": "Programmer pour la science des données",
+    "section": "Du cours à la pratique",
+    "text": "Du cours à la pratique\n\n\nDéfis et jalons\nLes travaux de la session, les difficultés rencontrées et les étapes du projet.\n\n\nDeux réalisations\nUne jointure vérifiée dans le Défi 2 et une collecte quotidienne avec GitHub Actions.\n\n\nParcours et compétences\nPréparer des données, vérifier une analyse et communiquer ses résultats."
+  },
+  {
+    "objectID": "pages/projet.html",
+    "href": "pages/projet.html",
+    "title": "Le projet d’équipe",
     "section": "",
-    "text": "Trois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
+    "text": "Le projet rapproche deux volets, les listes d’attente chirurgicale et les indicateurs d’urgence au Québec. Voici le parcours des données et la place de ma contribution dans le travail collectif."
+  },
+  {
+    "objectID": "pages/projet.html#le-parcours-des-données",
+    "href": "pages/projet.html#le-parcours-des-données",
+    "title": "Le projet d’équipe",
+    "section": "Le parcours des données",
+    "text": "Le parcours des données\n\n\nLes sources\nLe volet chirurgie utilise un CSV de Données Québec sur les listes d’attente. Le volet urgences repose sur des relevés d’indicateurs d’Index Santé.\n\n\nLa collecte des urgences\nGitHub Actions déclenche le script R selon les horaires configurés ou sur lancement manuel. Cette étape alimente le volet urgences.\nMa contribution porte sur cette collecte et la gestion du dépôt. Le guide de référence est celui du dossier GitAction.\n\n\nL’historique et les contrôles\nLe script conserve la première observation de chaque couple date–région. Les contrôles de doublons et de valeurs manquantes servent à examiner la structure et la complétude du CSV.\nhistorique &lt;- historique |&gt;\n  dplyr::distinct(\n    date_collecte,\n    region,\n    .keep_all = TRUE\n  )\nExtrait du script de collecte. La table historique est préparée dans les étapes précédentes.\nVoir les choix techniques de la collecte\n\n\nLa préparation des résultats\nLes scripts du projet préparent les tableaux et les graphiques par région pour les deux volets. L’intégration de ces résultats relève du travail d’équipe.\n\n\nL’exploration avec Shiny\nL’application lit les données préparées pour proposer une exploration par région. Le code prévoit des messages lorsque certains scripts nécessaires sont absents ou incomplets. Cette présentation décrit les fichiers inspectés dans le dépôt, sans annoncer une application déployée."
+  },
+  {
+    "objectID": "pages/projet.html#quelques-repères",
+    "href": "pages/projet.html#quelques-repères",
+    "title": "Le projet d’équipe",
+    "section": "Quelques repères",
+    "text": "Quelques repères\n\n7 octobre 2026 — proposition du projet et répartition initiale des responsabilités.\n30 octobre 2026 — première version de l’application Shiny dans l’historique local.\n1er novembre 2026 — révision du script de collecte et de son guide.\n\nLes résultats du projet évoluent avec les prochains livrables. Retrouver le projet dans le parcours du cours."
   },
   {
     "objectID": "pages/realisations/github-actions.html",
@@ -236,5 +236,40 @@
     "title": "GitHub Actions pour le projet",
     "section": "Trace du projet",
     "text": "Trace du projet\nLe guide « Explication de la collecte » dans GitAction documente le script R et son workflow. Le commit 9be82a3 du 1er novembre retrace la révision du script et du guide."
+  },
+  {
+    "objectID": "pages/cours.html",
+    "href": "pages/cours.html",
+    "title": "Le cours STT-6230",
+    "section": "",
+    "text": "Choisis un thème pour retrouver les travaux associés, puis ouvre une carte pour consulter un extrait de code ou une trace. Les extraits proviennent du portfolio et gardent leurs noms d’objets. Leur contexte et les objets nécessaires restent dans les scripts d’origine.\n\n\n\nTous\n\n\nR\n\n\nVisualisations\n\n\nQuarto\n\n\nTests\n\n\nGitHub\n\n\n\n\n\n\n\n\n\nGitHub\n\nMettre en place le portfolio et retrouver les dossiers de chaque semaine.\n\n\nVoir la trace\n\nLe bilan de cette semaine documente la prise en main du dépôt. Aucun script R associé n’a été repéré dans les sources examinées.\nBilan de la semaine 1\n\n\n\n\n\nR\n\nChoisir le bon lecteur et vérifier l’aller-retour d’un fichier JSON.\n\n\nVoir le code\n\njson_sortie &lt;- file.path(sorties, \"evenements.json\")\nwrite_json(evt11.1, json_sortie, pretty = TRUE, auto_unbox = TRUE, na = \"null\")\nevt_import &lt;- fromJSON(json_sortie)\nstopifnot(isTRUE(all.equal(evt_import, evt11.1)))\nScript de la semaine 2, extrait. Les objets sont préparés plus haut dans le script.\n\n\n\n\n\nR\n\nExaminer les valeurs manquantes dans airquality avant les calculs.\n\n\nVoir le code\n\nstr(airquality)\nany(is.na(airquality))\nnames(which(apply(is.na(airquality), MARGIN = 2, FUN = any)))\nScript de la semaine 3, extrait.\n\n\n\n\n\nR\n\nSélectionner les mêmes observations avec deux écritures et comparer les résultats.\n\n\nVoir le code\n\nextrait &lt;- airquality[\n  airquality$Month %in% c(6, 7, 8),\n  c(\"Ozone\", \"Solar.R\", \"Wind\", \"Temp\")\n]\n\nlibrary(dplyr)\nextrait_autre &lt;- select(filter(airquality, Month %in% c(6, 7, 8)), Ozone:Temp)\nall.equal(extrait, extrait_autre)\nScript de la semaine 4, extraits rapprochés. Seuls les commentaires intermédiaires ont été retirés.\n\n\n\n\n\nR\n\nIdentifier les points à améliorer dans la validation et la reproductibilité.\n\n\nVoir la trace\n\nLa trace disponible est un bilan de l’évaluation. Elle relie l’importation, le nettoyage, les variables dérivées, les résumés et les contrôles. Aucun code du défi n’est repris ici.\nBilan de la semaine 5\n\n\n\n\n\nR · Visualisations\n\nExplorer la position des séismes selon leur classe de magnitude.\n\n\nVoir le code\n\nquakes$mag_catego &lt;- floor(quakes$mag)\nquakes$mag_catego &lt;- factor(\n  quakes$mag_catego\n)\n\nlibrary(ggplot2)\nggplot(quakes, aes(x = long, y = lat)) +\n  geom_point(alpha = 0.3) +\n  facet_wrap(~ mag_catego)\nScript de la semaine 6, extraits rapprochés. Les inspections et graphiques intermédiaires ont été retirés.\n\n\n\n\n\nR · Quarto · Visualisations\n\nRassembler les données, les contrôles et les résultats dans un rapport.\n\n\nVoir le code\n\nstopifnot(\n  \"depth\" %in% names(seismes),\n  is.numeric(seismes$depth),\n  nrow(seismes) &gt; 0L,\n  !anyNA(seismes$depth)\n)\nRapport sur les séismes, bloc de préparation. Le tableau seismes est importé en amont.\n\n\n\n\n\nR · Quarto · Visualisations\n\nComprendre pourquoi une clé incomplète multiplie les correspondances.\n\n\nVoir le code\n\nproposition &lt;- lots_p |&gt;\n  left_join(tarifs_p, by = \"code_tarifaire\") |&gt;\n  mutate(surtaxe_cad = valeur_lot_cad * taux_surtaxe_pourcent / 100) |&gt;\n  group_by(lot_id) |&gt;\n  summarise(surtaxe_cad = sum(surtaxe_cad, na.rm = TRUE))\nProposition incorrecte analysée dans le rapport HTML du Défi 2. Cet extrait illustre le code à diagnostiquer.\n\nEssayer la jointure interactive\n\n\n\n\nR · Tests · GitHub\n\nContrôler le résultat d’une boucle à l’aide d’un calcul de référence.\n\n\nVoir le code\n\nextremes_reference &lt;- apply(airquality, 2, range, na.rm = TRUE)\nstopifnot(isTRUE(all.equal(extremes_boucle, extremes_reference)))\nScript de la semaine 9, extrait après construction de extremes_boucle. Le contrôle utilise R de base.\n\n\n\n\n\nR · Tests\n\nPratiquer les méthodes S3, explorer S4 et examiner les tests du coefficient d’asymétrie.\n\n\nVoir le code\n\nsummary.compte_impair &lt;- function(object, ...) {\n  resume &lt;- unclass(object)\n  names(resume) &lt;- \"Fréquence de nombres impairs\"\n  resume\n}\nLes tests testthat du laboratoire révèlent des défauts de la fonction de départ. Ces échecs font partie du diagnostic documenté.\nScript de la semaine 10, méthode S3. La classe est définie dans les exercices précédents.\n\n\n\n\nToutes les semaines sont affichées. Les filtres nécessitent JavaScript."
+  },
+  {
+    "objectID": "pages/cours.html#explorer-les-semaines",
+    "href": "pages/cours.html#explorer-les-semaines",
+    "title": "Le cours STT-6230",
+    "section": "",
+    "text": "Choisis un thème pour retrouver les travaux associés, puis ouvre une carte pour consulter un extrait de code ou une trace. Les extraits proviennent du portfolio et gardent leurs noms d’objets. Leur contexte et les objets nécessaires restent dans les scripts d’origine.\n\n\n\nTous\n\n\nR\n\n\nVisualisations\n\n\nQuarto\n\n\nTests\n\n\nGitHub\n\n\n\n\n\n\n\n\n\nGitHub\n\nMettre en place le portfolio et retrouver les dossiers de chaque semaine.\n\n\nVoir la trace\n\nLe bilan de cette semaine documente la prise en main du dépôt. Aucun script R associé n’a été repéré dans les sources examinées.\nBilan de la semaine 1\n\n\n\n\n\nR\n\nChoisir le bon lecteur et vérifier l’aller-retour d’un fichier JSON.\n\n\nVoir le code\n\njson_sortie &lt;- file.path(sorties, \"evenements.json\")\nwrite_json(evt11.1, json_sortie, pretty = TRUE, auto_unbox = TRUE, na = \"null\")\nevt_import &lt;- fromJSON(json_sortie)\nstopifnot(isTRUE(all.equal(evt_import, evt11.1)))\nScript de la semaine 2, extrait. Les objets sont préparés plus haut dans le script.\n\n\n\n\n\nR\n\nExaminer les valeurs manquantes dans airquality avant les calculs.\n\n\nVoir le code\n\nstr(airquality)\nany(is.na(airquality))\nnames(which(apply(is.na(airquality), MARGIN = 2, FUN = any)))\nScript de la semaine 3, extrait.\n\n\n\n\n\nR\n\nSélectionner les mêmes observations avec deux écritures et comparer les résultats.\n\n\nVoir le code\n\nextrait &lt;- airquality[\n  airquality$Month %in% c(6, 7, 8),\n  c(\"Ozone\", \"Solar.R\", \"Wind\", \"Temp\")\n]\n\nlibrary(dplyr)\nextrait_autre &lt;- select(filter(airquality, Month %in% c(6, 7, 8)), Ozone:Temp)\nall.equal(extrait, extrait_autre)\nScript de la semaine 4, extraits rapprochés. Seuls les commentaires intermédiaires ont été retirés.\n\n\n\n\n\nR\n\nIdentifier les points à améliorer dans la validation et la reproductibilité.\n\n\nVoir la trace\n\nLa trace disponible est un bilan de l’évaluation. Elle relie l’importation, le nettoyage, les variables dérivées, les résumés et les contrôles. Aucun code du défi n’est repris ici.\nBilan de la semaine 5\n\n\n\n\n\nR · Visualisations\n\nExplorer la position des séismes selon leur classe de magnitude.\n\n\nVoir le code\n\nquakes$mag_catego &lt;- floor(quakes$mag)\nquakes$mag_catego &lt;- factor(\n  quakes$mag_catego\n)\n\nlibrary(ggplot2)\nggplot(quakes, aes(x = long, y = lat)) +\n  geom_point(alpha = 0.3) +\n  facet_wrap(~ mag_catego)\nScript de la semaine 6, extraits rapprochés. Les inspections et graphiques intermédiaires ont été retirés.\n\n\n\n\n\nR · Quarto · Visualisations\n\nRassembler les données, les contrôles et les résultats dans un rapport.\n\n\nVoir le code\n\nstopifnot(\n  \"depth\" %in% names(seismes),\n  is.numeric(seismes$depth),\n  nrow(seismes) &gt; 0L,\n  !anyNA(seismes$depth)\n)\nRapport sur les séismes, bloc de préparation. Le tableau seismes est importé en amont.\n\n\n\n\n\nR · Quarto · Visualisations\n\nComprendre pourquoi une clé incomplète multiplie les correspondances.\n\n\nVoir le code\n\nproposition &lt;- lots_p |&gt;\n  left_join(tarifs_p, by = \"code_tarifaire\") |&gt;\n  mutate(surtaxe_cad = valeur_lot_cad * taux_surtaxe_pourcent / 100) |&gt;\n  group_by(lot_id) |&gt;\n  summarise(surtaxe_cad = sum(surtaxe_cad, na.rm = TRUE))\nProposition incorrecte analysée dans le rapport HTML du Défi 2. Cet extrait illustre le code à diagnostiquer.\n\nEssayer la jointure interactive\n\n\n\n\nR · Tests · GitHub\n\nContrôler le résultat d’une boucle à l’aide d’un calcul de référence.\n\n\nVoir le code\n\nextremes_reference &lt;- apply(airquality, 2, range, na.rm = TRUE)\nstopifnot(isTRUE(all.equal(extremes_boucle, extremes_reference)))\nScript de la semaine 9, extrait après construction de extremes_boucle. Le contrôle utilise R de base.\n\n\n\n\n\nR · Tests\n\nPratiquer les méthodes S3, explorer S4 et examiner les tests du coefficient d’asymétrie.\n\n\nVoir le code\n\nsummary.compte_impair &lt;- function(object, ...) {\n  resume &lt;- unclass(object)\n  names(resume) &lt;- \"Fréquence de nombres impairs\"\n  resume\n}\nLes tests testthat du laboratoire révèlent des défauts de la fonction de départ. Ces échecs font partie du diagnostic documenté.\nScript de la semaine 10, méthode S3. La classe est définie dans les exercices précédents.\n\n\n\n\nToutes les semaines sont affichées. Les filtres nécessitent JavaScript."
+  },
+  {
+    "objectID": "pages/cours.html#les-défis",
+    "href": "pages/cours.html#les-défis",
+    "title": "Le cours STT-6230",
+    "section": "Les défis",
+    "text": "Les défis\nDéfi 1. Le retour sur cette première évaluation fait ressortir trois points à travailler, soit la validation des résultats, la documentation des choix et la reproductibilité. L’entraînement de la semaine 7 a notamment servi à corriger l’appel à un script depuis Quarto.\nDéfi 2. Les contrôles portent sur l’unicité des clés, le nombre de lignes, les données manquantes et un calcul refait indépendamment. La réalisation détaillée explique comment ces contrôles ont orienté le choix de la jointure."
+  },
+  {
+    "objectID": "pages/cours.html#les-jalons-du-portfolio",
+    "href": "pages/cours.html#les-jalons-du-portfolio",
+    "title": "Le cours STT-6230",
+    "section": "Les jalons du portfolio",
+    "text": "Les jalons du portfolio\n\nSemaine 3 — démarrage. Mettre en place le portfolio et constituer les premières traces.\nSemaine 9 — progression. Revenir sur les difficultés rencontrées et relier les améliorations à des preuves, comme la comparaison de mises en forme et le rendu du rapport de la semaine 7.\nSemaine 14 — bilan final à venir. Relire l’ensemble du parcours, choisir les preuves les plus parlantes et vérifier la cohérence des liens et de la documentation."
+  },
+  {
+    "objectID": "pages/cours.html#le-projet-déquipe",
+    "href": "pages/cours.html#le-projet-déquipe",
+    "title": "Le cours STT-6230",
+    "section": "Le projet d’équipe",
+    "text": "Le projet d’équipe\nLe projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.\nExplorer le parcours visuel du projet.\nL’application relève du travail collectif. Ma contribution présentée ici porte sur la collecte automatisée des indicateurs d’urgence avec GitHub Actions.\nConsulter le site du cours."
   }
 ]

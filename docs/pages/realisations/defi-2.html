@@ -101,6 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../pages/cours.html"> 
 <span class="menu-text">Le cours</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/projet.html"> 
+<span class="menu-text">Projet d’équipe</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-réalisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Réalisations</span>
@@ -142,6 +146,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#contexte-et-production" id="toc-contexte-et-production" class="nav-link active" data-scroll-target="#contexte-et-production">Contexte et production</a></li>
   <li><a href="#le-choix-technique" id="toc-le-choix-technique" class="nav-link" data-scroll-target="#le-choix-technique">Le choix technique</a></li>
+  <li><a href="#essayer-une-jointure" id="toc-essayer-une-jointure" class="nav-link" data-scroll-target="#essayer-une-jointure">Essayer une jointure</a></li>
   <li><a href="#ce-que-cette-réalisation-montre" id="toc-ce-que-cette-réalisation-montre" class="nav-link" data-scroll-target="#ce-que-cette-réalisation-montre">Ce que cette réalisation montre</a></li>
   <li><a href="#trace-et-limite" id="toc-trace-et-limite" class="nav-link" data-scroll-target="#trace-et-limite">Trace et limite</a></li>
   </ul>
@@ -214,6 +219,111 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
+<section id="essayer-une-jointure" class="level2">
+<h2 class="anchored" data-anchor-id="essayer-une-jointure">Essayer une jointure</h2>
+<p>Cet exemple utilise <strong>trois lots et des tarifs fictifs</strong> pour rendre le mécanisme visible. Dans le rapport du Défi 2, les effectifs documentés sont de 25 lignes avec le code seul et de 10 avec la clé composite pour le scénario après.</p>
+<div class="jointure-demo" data-jointure-demo="">
+  <div class="demo-tables">
+    <div>
+      <h3 class="anchored">Les lots</h3>
+      
+<table class="caption-top table" data-quarto-postprocess="true">
+<caption>Trois lots fictifs</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Lot</th>
+<th data-quarto-table-cell-role="th">Source</th>
+<th data-quarto-table-cell-role="th">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L01</td>
+<td>A</td>
+<td>001</td>
+</tr>
+<tr class="even">
+<td>L02</td>
+<td>B</td>
+<td>001</td>
+</tr>
+<tr class="odd">
+<td>L03</td>
+<td>A</td>
+<td>002</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    <div>
+      <h3 class="anchored">Les tarifs</h3>
+      
+<table class="caption-top table" data-quarto-postprocess="true">
+<caption>Tarifs fictifs de deux sources</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Source</th>
+<th data-quarto-table-cell-role="th">Code</th>
+<th data-quarto-table-cell-role="th">Taux</th>
+</tr>
+</thead>
+<tbody data-demo-tarifs="">
+<tr class="odd">
+<td>A</td>
+<td>001</td>
+<td>10 %</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>001</td>
+<td>20 %</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>002</td>
+<td>5 %</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+  </div>
+  <div data-demo-commandes="" hidden="">
+    <fieldset class="demo-cle">
+      <legend>Choisir la clé de jointure</legend>
+      <label><input type="radio" name="cle-jointure" value="code"> Code seul</label>
+      <label><input type="radio" name="cle-jointure" value="composite" checked=""> Source + code</label>
+    </fieldset>
+    <label class="demo-doublon"><input type="checkbox" data-demo-doublon=""> Ajouter un doublon exact A + 001 dans les tarifs</label>
+  </div>
+  <div data-demo-resultat="" hidden="">
+    <p class="demo-statut" data-demo-statut="" role="status" aria-live="polite"></p>
+    <p data-demo-explication=""></p>
+    <pre><code class="language-r" data-demo-code=""></code></pre>
+    <div class="demo-resultat" role="region" aria-label="Résultat de la jointure" tabindex="0">
+      
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>Correspondances obtenues</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Lot</th>
+<th data-quarto-table-cell-role="th">Source du lot</th>
+<th data-quarto-table-cell-role="th">Code</th>
+<th data-quarto-table-cell-role="th">Source du tarif</th>
+<th data-quarto-table-cell-role="th">Taux</th>
+<th data-quarto-table-cell-role="th">Correspondance</th>
+</tr>
+</thead>
+<tbody data-demo-lignes="">
+</tbody>
+</table>
+
+    </div>
+  </div>
+  <noscript>Active JavaScript pour changer la clé et voir les correspondances. Le code seul peut associer un lot au tarif d’une autre source. La clé composite demande également une référence sans doublon.</noscript>
+</div>
+</section>
 <section id="ce-que-cette-réalisation-montre" class="level2">
 <h2 class="anchored" data-anchor-id="ce-que-cette-réalisation-montre">Ce que cette réalisation montre</h2>
 <p>Le contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.</p>
@@ -222,6 +332,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="trace-et-limite">Trace et limite</h2>
 <p>Le bilan de la semaine 8 et le rapport HTML du portfolio documentent la démarche. Les montants sont des résultats de simulation pour les lots calculables. Les sources et données du rapport ne sont pas réunies dans le portfolio pour relancer l’analyse.</p>
 <p>La préparation et la réalisation du défi ont fait l’objet d’entrées distinctes dans le journal IA du portfolio. <a href="../../pages/declaration-ia.html">Voir la déclaration IA du site</a>.</p>
+<script src="../../assets/interactions.js" defer=""></script>
 
 
 </section>

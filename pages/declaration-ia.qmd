@@ -28,3 +28,10 @@ Codex a développé la page Parcours et intégré la semaine 10 à partir des bi
 ## Aperçus et navigation — 13 novembre 2026
 
 Codex a rédigé une courte présentation à partir des informations du parcours, ajouté un bloc d’actualité daté et organisé le menu des réalisations. Deux schémas SVG synthétisent des éléments déjà documentés, soit le contrôle d’effectif du Défi 2 et les étapes de la collecte GitHub Actions. Codex a aussi produit l’icône de l’onglet et retiré les mentions nominatives des déclarations et du journal IA du site.
+
+
+## Exploration du cours et démonstration — 13 novembre 2026
+
+Codex a sélectionné de courts extraits dans les scripts du portfolio et ajouté des cartes filtrables pour les dix semaines documentées. Les semaines principalement documentaires conservent une trace explicative. L’extrait de semaine 8 est identifié comme une proposition incorrecte analysée dans le rapport.
+
+La démonstration de jointure utilise trois lots et des tarifs fictifs créés pour expliquer les correspondances et l’effet d’un doublon. Ses effectifs sont distincts de ceux du rapport du Défi 2. Codex a produit le JavaScript, la présentation et la page projet à partir des sources inspectées.

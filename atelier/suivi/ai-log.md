@@ -45,3 +45,14 @@ Contrôles de cette mise à jour terminés. Les sept pages ont été générées
 
 
 Vérification terminée. Les sept pages ont été rendues, les 203 liens et ressources HTML ainsi que 66 liens dans les sources et la documentation ont été contrôlés. Les trois SVG sont valides. La déclaration source, son HTML, sa redirection et le journal IA du site ne contiennent plus le nom personnel. Quarto a encore signalé des refus d’accès lors du nettoyage temporaire après génération.
+
+## 13 novembre 2026 — Cartes, jointure et projet
+
+- **Outil** — Codex.
+- **Demande** — rendre les semaines explorables avec filtres et code, ajouter une interaction au Défi 2 et une page projet.
+- **Apports retenus** — dix cartes, six filtres, extraits courts, démonstration à trois lots fictifs avec option de doublon, page projet et navigation.
+- **Sources examinées** — scripts des semaines 2, 3, 4, 6, 9 et 10, QMD de semaine 7, rapport HTML de semaine 8 et bilans des semaines 1 et 5. Script GitAction, workflow et entrée de l’application Shiny consultés en lecture seule.
+- **Adaptations** — la proposition incorrecte de semaine 8 est signalée comme telle. Les extraits conservent leur contexte et ne sont pas annoncés comme exécutables isolément. Les scripts R et la collecte distante ne sont pas relancés.
+
+
+Contrôles terminés. Les huit pages sont générées. Les dix cartes, les cinq étapes du projet et 323 liens, ancres et ressources ont été vérifiés. Un test JavaScript sous Node avec un DOM simulé couvre les six filtres, la remise à zéro, les attributs ARIA et les quatre combinaisons de clé et de doublon. La déclaration générée et le journal IA restent sans nom personnel. Le rendu visuel dans un navigateur reste à examiner. Quarto signale encore un refus d’accès au nettoyage temporaire après génération.

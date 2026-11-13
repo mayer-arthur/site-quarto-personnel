@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -101,6 +135,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../pages/cours.html" aria-current="page"> 
 <span class="menu-text">Le cours</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/projet.html"> 
+<span class="menu-text">Projet d’équipe</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-réalisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Réalisations</span>
@@ -140,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#des-premières-données-à-lautomatisation" id="toc-des-premières-données-à-lautomatisation" class="nav-link active" data-scroll-target="#des-premières-données-à-lautomatisation">Des premières données à l’automatisation</a></li>
+  <li><a href="#explorer-les-semaines" id="toc-explorer-les-semaines" class="nav-link active" data-scroll-target="#explorer-les-semaines">Explorer les semaines</a></li>
   <li><a href="#les-défis" id="toc-les-défis" class="nav-link" data-scroll-target="#les-défis">Les défis</a></li>
   <li><a href="#les-jalons-du-portfolio" id="toc-les-jalons-du-portfolio" class="nav-link" data-scroll-target="#les-jalons-du-portfolio">Les jalons du portfolio</a></li>
   <li><a href="#le-projet-déquipe" id="toc-le-projet-déquipe" class="nav-link" data-scroll-target="#le-projet-déquipe">Le projet d’équipe</a></li>
@@ -170,76 +208,214 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="des-premières-données-à-lautomatisation" class="level2">
-<h2 class="anchored" data-anchor-id="des-premières-données-à-lautomatisation">Des premières données à l’automatisation</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Semaine</th>
-<th>Travail documenté</th>
-<th>Compétence mise en pratique</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Mise en place du portfolio et prise en main de GitHub.</td>
-<td>Organiser et versionner le travail.</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Importation et exportation de données de formats variés.</td>
-<td>Choisir la fonction de lecture d’après le contenu du fichier.</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Exercices de calcul mathématique et statistique.</td>
-<td>Traduire une démarche de calcul en R.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Prétraitement et comparaison de <code>reshape()</code> et <code>pivot_wider()</code>.</td>
-<td>Comparer les résultats après avoir harmonisé leur ordre et leur structure.</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Retour sur le Défi 1.</td>
-<td>Repérer les contrôles et les explications qui manquaient à l’analyse.</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Exercices de visualisation.</td>
-<td>Mettre en forme des données pour les communiquer.</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Rapport Quarto sur les séismes et entraînement au Défi 2.</td>
-<td>Rendre un rapport depuis les sources et corriger des chemins relatifs.</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>Défi 2 sur les tarifs et les lots.</td>
-<td>Vérifier une clé de jointure, les effectifs et un calcul de référence.</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Exercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon.</td>
-<td>Comparer plusieurs façons de parcourir une liste.</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>Exercices 1 à 8 du laboratoire commun aux modules 10 et 11, méthodes S3, exploration S4 et coefficient d’asymétrie.</td>
-<td>Comparer un calcul à une référence et à une simulation, examiner les valeurs manquantes et interpréter les tests avec <code>testthat</code>.</td>
-</tr>
-</tbody>
-</table>
-<p>La chronologie reflète les travaux documentés jusqu’à la semaine 10. Elle sera complétée à mesure que les traces de fin de session seront disponibles.</p>
-<p>La semaine 10 est terminée selon mon suivi actuel. Les échecs et l’erreur rapportés par les tests concernent la version de départ étudiée dans le laboratoire. Les corrections de cette fonction font partie des exercices suivants.</p>
+<section id="explorer-les-semaines" class="level2">
+<h2 class="anchored" data-anchor-id="explorer-les-semaines">Explorer les semaines</h2>
+<p>Choisis un thème pour retrouver les travaux associés, puis ouvre une carte pour consulter un extrait de code ou une trace. Les extraits proviennent du portfolio et gardent leurs noms d’objets. Leur contexte et les objets nécessaires restent dans les scripts d’origine.</p>
+<div class="filtres-semaines" data-filtres-semaines="" hidden="">
+<div class="filtre-boutons" role="group" aria-label="Filtrer les semaines par thème">
+<button type="button" data-filtre="tous" aria-pressed="true" aria-controls="grille-semaines">
+Tous
+</button>
+<button type="button" data-filtre="r" aria-pressed="false" aria-controls="grille-semaines">
+R
+</button>
+<button type="button" data-filtre="visualisations" aria-pressed="false" aria-controls="grille-semaines">
+Visualisations
+</button>
+<button type="button" data-filtre="quarto" aria-pressed="false" aria-controls="grille-semaines">
+Quarto
+</button>
+<button type="button" data-filtre="tests" aria-pressed="false" aria-controls="grille-semaines">
+Tests
+</button>
+<button type="button" data-filtre="github" aria-pressed="false" aria-controls="grille-semaines">
+GitHub
+</button>
+</div>
+<p class="filtre-compteur" data-compteur-semaines="" role="status" aria-live="polite">
+</p>
+</div>
+<div id="grille-semaines" class="semaines-grid">
+<section id="semaine-1-prendre-en-main-github" class="level3 unlisted semaine-carte" data-themes="github">
+<h3 class="unlisted anchored" data-anchor-id="semaine-1-prendre-en-main-github">Semaine 1 · Prendre en main GitHub</h3>
+<div class="semaine-themes">
+<p>GitHub</p>
+</div>
+<p>Mettre en place le portfolio et retrouver les dossiers de chaque semaine.</p>
+<details>
+<summary>
+Voir la trace
+</summary>
+<p>Le bilan de cette semaine documente la prise en main du dépôt. Aucun script R associé n’a été repéré dans les sources examinées.</p>
+<p><em>Bilan de la semaine 1</em></p>
+</details>
+</section>
+<section id="semaine-2-importer-et-exporter" class="level3 unlisted semaine-carte" data-themes="r">
+<h3 class="unlisted anchored" data-anchor-id="semaine-2-importer-et-exporter">Semaine 2 · Importer et exporter</h3>
+<div class="semaine-themes">
+<p>R</p>
+</div>
+<p>Choisir le bon lecteur et vérifier l’aller-retour d’un fichier JSON.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>json_sortie <span class="ot">&lt;-</span> <span class="fu">file.path</span>(sorties, <span class="st">"evenements.json"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_json</span>(evt11<span class="fl">.1</span>, json_sortie, <span class="at">pretty =</span> <span class="cn">TRUE</span>, <span class="at">auto_unbox =</span> <span class="cn">TRUE</span>, <span class="at">na =</span> <span class="st">"null"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>evt_import <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(json_sortie)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">isTRUE</span>(<span class="fu">all.equal</span>(evt_import, evt11<span class="fl">.1</span>)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Script de la semaine 2, extrait. Les objets sont préparés plus haut dans le script.</em></p>
+</details>
+</section>
+<section id="semaine-3-calculer-et-repérer-les-na" class="level3 unlisted semaine-carte" data-themes="r">
+<h3 class="unlisted anchored" data-anchor-id="semaine-3-calculer-et-repérer-les-na">Semaine 3 · Calculer et repérer les NA</h3>
+<div class="semaine-themes">
+<p>R</p>
+</div>
+<p>Examiner les valeurs manquantes dans airquality avant les calculs.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(airquality)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(airquality))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(<span class="fu">which</span>(<span class="fu">apply</span>(<span class="fu">is.na</span>(airquality), <span class="at">MARGIN =</span> <span class="dv">2</span>, <span class="at">FUN =</span> any)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Script de la semaine 3, extrait.</em></p>
+</details>
+</section>
+<section id="semaine-4-transformer-les-données" class="level3 unlisted semaine-carte" data-themes="r">
+<h3 class="unlisted anchored" data-anchor-id="semaine-4-transformer-les-données">Semaine 4 · Transformer les données</h3>
+<div class="semaine-themes">
+<p>R</p>
+</div>
+<p>Sélectionner les mêmes observations avec deux écritures et comparer les résultats.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>extrait <span class="ot">&lt;-</span> airquality[</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  airquality<span class="sc">$</span>Month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"Ozone"</span>, <span class="st">"Solar.R"</span>, <span class="st">"Wind"</span>, <span class="st">"Temp"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>extrait_autre <span class="ot">&lt;-</span> <span class="fu">select</span>(<span class="fu">filter</span>(airquality, Month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>)), Ozone<span class="sc">:</span>Temp)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">all.equal</span>(extrait, extrait_autre)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Script de la semaine 4, extraits rapprochés. Seuls les commentaires intermédiaires ont été retirés.</em></p>
+</details>
+</section>
+<section id="semaine-5-revenir-sur-le-défi-1" class="level3 unlisted semaine-carte" data-themes="r">
+<h3 class="unlisted anchored" data-anchor-id="semaine-5-revenir-sur-le-défi-1">Semaine 5 · Revenir sur le Défi 1</h3>
+<div class="semaine-themes">
+<p>R</p>
+</div>
+<p>Identifier les points à améliorer dans la validation et la reproductibilité.</p>
+<details>
+<summary>
+Voir la trace
+</summary>
+<p>La trace disponible est un bilan de l’évaluation. Elle relie l’importation, le nettoyage, les variables dérivées, les résumés et les contrôles. Aucun code du défi n’est repris ici.</p>
+<p><em>Bilan de la semaine 5</em></p>
+</details>
+</section>
+<section id="semaine-6-visualiser-les-séismes" class="level3 unlisted semaine-carte" data-themes="r visualisations">
+<h3 class="unlisted anchored" data-anchor-id="semaine-6-visualiser-les-séismes">Semaine 6 · Visualiser les séismes</h3>
+<div class="semaine-themes">
+<p>R · Visualisations</p>
+</div>
+<p>Explorer la position des séismes selon leur classe de magnitude.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quakes<span class="sc">$</span>mag_catego <span class="ot">&lt;-</span> <span class="fu">floor</span>(quakes<span class="sc">$</span>mag)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>quakes<span class="sc">$</span>mag_catego <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  quakes<span class="sc">$</span>mag_catego</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(quakes, <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat)) <span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> mag_catego)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Script de la semaine 6, extraits rapprochés. Les inspections et graphiques intermédiaires ont été retirés.</em></p>
+</details>
+</section>
+<section id="semaine-7-construire-un-rapport-quarto" class="level3 unlisted semaine-carte" data-themes="r quarto visualisations">
+<h3 class="unlisted anchored" data-anchor-id="semaine-7-construire-un-rapport-quarto">Semaine 7 · Construire un rapport Quarto</h3>
+<div class="semaine-themes">
+<p>R · Quarto · Visualisations</p>
+</div>
+<p>Rassembler les données, les contrôles et les résultats dans un rapport.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"depth"</span> <span class="sc">%in%</span> <span class="fu">names</span>(seismes),</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">is.numeric</span>(seismes<span class="sc">$</span>depth),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>(seismes) <span class="sc">&gt;</span> <span class="dv">0</span>L,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span><span class="fu">anyNA</span>(seismes<span class="sc">$</span>depth)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Rapport sur les séismes, bloc de préparation. Le tableau seismes est importé en amont.</em></p>
+</details>
+</section>
+<section id="semaine-8-diagnostiquer-une-jointure" class="level3 unlisted semaine-carte" data-themes="r quarto visualisations">
+<h3 class="unlisted anchored" data-anchor-id="semaine-8-diagnostiquer-une-jointure">Semaine 8 · Diagnostiquer une jointure</h3>
+<div class="semaine-themes">
+<p>R · Quarto · Visualisations</p>
+</div>
+<p>Comprendre pourquoi une clé incomplète multiplie les correspondances.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>proposition <span class="ot">&lt;-</span> lots_p <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(tarifs_p, <span class="at">by =</span> <span class="st">"code_tarifaire"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">surtaxe_cad =</span> valeur_lot_cad <span class="sc">*</span> taux_surtaxe_pourcent <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(lot_id) <span class="sc">|&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">surtaxe_cad =</span> <span class="fu">sum</span>(surtaxe_cad, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Proposition incorrecte analysée dans le rapport HTML du Défi 2. Cet extrait illustre le code à diagnostiquer.</em></p>
+</details>
+<p><a href="../pages/realisations/defi-2.html">Essayer la jointure interactive</a></p>
+</section>
+<section id="semaine-9-comparer-des-boucles" class="level3 unlisted semaine-carte" data-themes="r tests github">
+<h3 class="unlisted anchored" data-anchor-id="semaine-9-comparer-des-boucles">Semaine 9 · Comparer des boucles</h3>
+<div class="semaine-themes">
+<p>R · Tests · GitHub</p>
+</div>
+<p>Contrôler le résultat d’une boucle à l’aide d’un calcul de référence.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>extremes_reference <span class="ot">&lt;-</span> <span class="fu">apply</span>(airquality, <span class="dv">2</span>, range, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">isTRUE</span>(<span class="fu">all.equal</span>(extremes_boucle, extremes_reference)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>Script de la semaine 9, extrait après construction de extremes_boucle. Le contrôle utilise R de base.</em></p>
+</details>
+</section>
+<section id="semaine-10-explorer-les-objets-et-les-tests" class="level3 unlisted semaine-carte" data-themes="r tests">
+<h3 class="unlisted anchored" data-anchor-id="semaine-10-explorer-les-objets-et-les-tests">Semaine 10 · Explorer les objets et les tests</h3>
+<div class="semaine-themes">
+<p>R · Tests</p>
+</div>
+<p>Pratiquer les méthodes S3, explorer S4 et examiner les tests du coefficient d’asymétrie.</p>
+<details>
+<summary>
+Voir le code
+</summary>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>summary.compte_impair <span class="ot">&lt;-</span> <span class="cf">function</span>(object, ...) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  resume <span class="ot">&lt;-</span> <span class="fu">unclass</span>(object)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(resume) <span class="ot">&lt;-</span> <span class="st">"Fréquence de nombres impairs"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  resume</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Les tests testthat du laboratoire révèlent des défauts de la fonction de départ. Ces échecs font partie du diagnostic documenté.</p>
+<p><em>Script de la semaine 10, méthode S3. La classe est définie dans les exercices précédents.</em></p>
+</details>
+</section>
+</div>
+<noscript>
+Toutes les semaines sont affichées. Les filtres nécessitent JavaScript.
+</noscript>
 </section>
 <section id="les-défis" class="level2">
 <h2 class="anchored" data-anchor-id="les-défis">Les défis</h2>
@@ -257,8 +433,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="le-projet-déquipe" class="level2">
 <h2 class="anchored" data-anchor-id="le-projet-déquipe">Le projet d’équipe</h2>
 <p>Le projet explore les listes d’attente chirurgicale et les délais aux urgences au Québec. La proposition du 7 octobre pose la question et répartit les responsabilités. Une première version de l’application Shiny a été ajoutée le 30 octobre. Le 1er novembre, le script de collecte et son guide ont été révisés.</p>
+<p><a href="../pages/projet.html">Explorer le parcours visuel du projet</a>.</p>
 <p>L’application relève du travail collectif. Ma contribution présentée ici porte sur la <a href="../pages/realisations/github-actions.html">collecte automatisée des indicateurs d’urgence avec GitHub Actions</a>.</p>
 <p><a href="https://aureliennicosiaulaval.github.io/programmation-pour-la-science-des-donnees/">Consulter le site du cours</a>.</p>
+<script src="../assets/interactions.js" defer=""></script>
 
 
 </section>

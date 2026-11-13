@@ -38,3 +38,10 @@ La présentation et le bloc En ce moment complètent l’accueil. Les deux réal
 
 
 Vérification terminée. Les sept pages ont été rendues, les 203 liens et ressources HTML ainsi que 66 liens dans les sources et la documentation ont été contrôlés. Les trois SVG sont valides. La déclaration source, son HTML, sa redirection et le journal IA du site ne contiennent plus le nom personnel. Quarto a encore signalé des refus d’accès lors du nettoyage temporaire après génération.
+
+## 13 novembre 2026 — Exploration interactive
+
+Les dix semaines sont présentées dans des cartes filtrables. Les semaines 1 et 5 ont une trace documentaire et les autres un extrait identifié. La démonstration du Défi 2 emploie des données fictives, une clé sélectionnable et un doublon facultatif. La page projet relie les sources, la collecte, l’historique, les résultats et Shiny.
+
+
+Contrôles terminés. Les huit pages sont générées. Les dix cartes, les cinq étapes du projet et 323 liens, ancres et ressources ont été vérifiés. Un test JavaScript sous Node avec un DOM simulé couvre les six filtres, la remise à zéro, les attributs ARIA et les quatre combinaisons de clé et de doublon. La déclaration générée et le journal IA restent sans nom personnel. Le rendu visuel dans un navigateur reste à examiner. Quarto signale encore un refus d’accès au nettoyage temporaire après génération.

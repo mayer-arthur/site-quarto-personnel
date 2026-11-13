@@ -1,10 +1,13 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/**
   render:
     - index.qmd
     - pages/parcours.qmd
     - pages/cours.qmd
+    - pages/projet.qmd
     - pages/realisations/index.qmd
     - pages/realisations/defi-2.qmd
     - pages/realisations/github-actions.qmd
@@ -29,6 +32,8 @@ website:
         href: pages/parcours.qmd
       - text: Le cours
         href: pages/cours.qmd
+      - text: Projet d’équipe
+        href: pages/projet.qmd
       - text: Réalisations
         menu:
           - text: Vue d’ensemble

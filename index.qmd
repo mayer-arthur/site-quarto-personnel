@@ -35,7 +35,7 @@ Mise à jour du 13 novembre 2026
 
 La semaine 10 est terminée. Elle complète mon parcours avec les objets R et les tests. Je prépare aussi la présentation de ma contribution GitHub Actions au projet.
 
-[Suivre ma progression dans le cours](pages/cours.qmd)
+[Suivre ma progression dans le cours](pages/cours.qmd) · [Explorer le projet d’équipe](pages/projet.qmd)
 :::
 
 ## Du cours à la pratique

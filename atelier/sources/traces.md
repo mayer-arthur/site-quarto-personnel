@@ -26,3 +26,12 @@ Les étapes du parcours s’appuient aussi sur les bilans des semaines 4, 5, 7 e
 ## Aperçus visuels — 13 novembre 2026
 
 Les SVG de assets/visuels/ synthétisent les traces du Défi 2 et de GitAction décrites plus haut. Le visuel Défi 2 compare 25 et 10 lignes dans le scénario après. Le visuel GitHub Actions représente le lancement, la collecte en R et le commit conditionnel du CSV. La présentation de l’accueil reprend le cours suivi, les outils pratiqués et l’objectif d’autonomie documenté dans le bilan du Défi 2.
+
+
+## Cartes et code — 13 novembre 2026
+
+Les extraits des semaines 2, 3, 4, 6, 9 et 10 proviennent des scripts R sous leurs dossiers hebdomadaires. Celui de semaine 7 vient de rapport/rapport.qmd. Celui de semaine 8 reprend la proposition incorrecte du rapport-defi-2.html et reste étiqueté comme un diagnostic. Les semaines 1 et 5 renvoient à leur bilan. Aucun code absent n’a été reconstitué comme production personnelle.
+
+La page projet reprend docs/proposition.md, docs/GitAction/R/collecte_indexsante.R, .github/workflows/collecte-urgences.yml et app/app.R du projet. Les fichiers ont été inspectés en lecture seule. L’extrait distinct est tiré du script GitAction. L’état décrit de l’application correspond aux fichiers locaux.
+
+La démonstration de jointure est un exemple pédagogique original à trois lots. Elle ne reprend aucune donnée ni aucun résultat numérique du rapport d’évaluation.

@@ -1,0 +1,69 @@
+---
+title: "Le projet d’équipe"
+subtitle: "Des données de santé publique à leur exploration"
+---
+
+Le projet rapproche deux volets, les listes d’attente chirurgicale et les indicateurs d’urgence au Québec. Voici le parcours des données et la place de ma contribution dans le travail collectif.
+
+## Le parcours des données
+
+:::: {.projet-parcours role="list"}
+::: {.projet-etape role="listitem"}
+
+### Les sources
+
+Le volet chirurgie utilise un CSV de Données Québec sur les listes d’attente. Le volet urgences repose sur des relevés d’indicateurs d’Index Santé.
+
+:::
+::: {.projet-etape role="listitem"}
+
+### La collecte des urgences
+
+GitHub Actions déclenche le script R selon les horaires configurés ou sur lancement manuel. Cette étape alimente le volet urgences.
+
+**Ma contribution** porte sur cette collecte et la gestion du dépôt. Le guide de référence est celui du dossier GitAction.
+
+:::
+::: {.projet-etape role="listitem"}
+
+### L’historique et les contrôles
+
+Le script conserve la première observation de chaque couple date–région. Les contrôles de doublons et de valeurs manquantes servent à examiner la structure et la complétude du CSV.
+
+```r
+historique <- historique |>
+  dplyr::distinct(
+    date_collecte,
+    region,
+    .keep_all = TRUE
+  )
+```
+
+*Extrait du script de collecte. La table historique est préparée dans les étapes précédentes.*
+
+[Voir les choix techniques de la collecte](realisations/github-actions.qmd)
+
+:::
+::: {.projet-etape role="listitem"}
+
+### La préparation des résultats
+
+Les scripts du projet préparent les tableaux et les graphiques par région pour les deux volets. L’intégration de ces résultats relève du travail d’équipe.
+
+:::
+::: {.projet-etape role="listitem"}
+
+### L’exploration avec Shiny
+
+L’application lit les données préparées pour proposer une exploration par région. Le code prévoit des messages lorsque certains scripts nécessaires sont absents ou incomplets. Cette présentation décrit les fichiers inspectés dans le dépôt, sans annoncer une application déployée.
+
+:::
+::::
+
+## Quelques repères
+
+- **7 octobre 2026** — proposition du projet et répartition initiale des responsabilités.
+- **30 octobre 2026** — première version de l’application Shiny dans l’historique local.
+- **1er novembre 2026** — révision du script de collecte et de son guide.
+
+Les résultats du projet évoluent avec les prochains livrables. [Retrouver le projet dans le parcours du cours](cours.qmd#le-projet-déquipe).
