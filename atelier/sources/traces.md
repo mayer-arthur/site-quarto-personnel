@@ -13,3 +13,11 @@ Les chemins ci-dessous sont relatifs aux dépôts indiqués. Le registre sert à
 | Contribution GitHub Actions | Projet `docs/GitAction/explication_collecte.qmd`, `docs/GitAction/R/collecte_indexsante.R`, `.github/workflows/collecte-urgences.yml`, commit `9be82a3` | Guide et script révisés le 1er novembre. Trois passages planifiés, une observation conservée par date–région. |
 | Contrôle du CSV | Projet `docs/GitAction/DATA/urgences_historique.csv` | L’agent a vérifié 400 lignes, 25 dates, 16 régions par date et aucun doublon. Les 25 lignes de Mauricie et Centre-du-Québec ont leurs trois indicateurs manquants. Aucune exécution distante. |
 | Procédures reprises | Portfolio `AGENTS.md` et `.agents/skills/` | Les procédures de bilan, d’audit et de reproductibilité ont inspiré la séparation des faits, preuves et contrôles dans l’atelier du site. |
+
+## Semaine 10 et mise à jour du parcours — 13 novembre 2026
+
+Le bilan `semaines/semaine-10/README.md`, le script `semaines/semaine-10/Script R/Exercices semaine 10.R` et l’entrée du 11 novembre dans `docs/ai-log.md` du portfolio documentent les exercices 1 à 8. Ils couvrent les méthodes S3, un objet S4, le coefficient d’asymétrie et des tests. Le script et le bilan ont été lus pendant cette séance. Le script n’a pas été relancé. Le bilan rapporte une exécution par Codex et des échecs attendus pour la fonction étudiée.
+
+Arthur confirme le 13 novembre que la semaine est terminée. Cette confirmation complète le bilan antérieur, qui indiquait encore une relecture à faire. Elle ne constitue pas une correction des défauts détectés par les tests.
+
+Les étapes du parcours s’appuient aussi sur les bilans des semaines 4, 5, 7 et 8, le suivi du portfolio et les traces GitAction déjà relevées.

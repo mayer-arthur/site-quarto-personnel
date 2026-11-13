@@ -119,8 +119,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#continuer-à-gagner-en-autonomie" id="toc-continuer-à-gagner-en-autonomie" class="nav-link active" data-scroll-target="#continuer-à-gagner-en-autonomie">Continuer à gagner en autonomie</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -128,6 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Parcours et compétences</h1>
+<p class="subtitle lead">Des premières manipulations en R à la vérification et à l’automatisation</p>
 </div>
 
 
@@ -144,35 +151,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Le <a href="../pages/cours.html">parcours dans le cours</a> relie quatre compétences que j’ai mobilisées au fil de la session.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Compétence</th>
-<th>Exemple</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Préparer des données</td>
-<td>Importer, transformer et restructurer des tables en R.</td>
-</tr>
-<tr class="even">
-<td>Vérifier une analyse</td>
-<td>Contrôler les clés de jointure et refaire un calcul de référence dans le <a href="../pages/realisations/defi-2.html">Défi 2</a>.</td>
-</tr>
-<tr class="odd">
-<td>Communiquer des résultats</td>
-<td>Produire des graphiques et des rapports avec Quarto.</td>
-</tr>
-<tr class="even">
-<td>Automatiser des vérifications</td>
-<td>Mettre en place un <a href="../pages/realisations/github-actions.html">workflow GitHub Actions</a> pour le projet d’équipe.</td>
-</tr>
-</tbody>
-</table>
+<p>Au fil du cours STT-6230, mes travaux m’ont amené à passer de la manipulation de données à des questions plus précises. Comment vérifier une transformation? Comment retrouver les fichiers nécessaires à un rapport? Que faut-il contrôler avant de conserver le résultat d’une collecte?</p>
+<p>Les quatre étapes suivantes relient ces questions aux travaux de mon <a href="../pages/cours.html">parcours dans le cours</a>.</p>
+<div class="parcours-etapes">
+<section id="construire-mes-bases-en-r" class="level2 parcours-etape">
+<h2 class="anchored" data-anchor-id="construire-mes-bases-en-r">Construire mes bases en R</h2>
+<div class="parcours-repere">
+<p>Semaines 1 à 4 · Organiser et transformer</p>
+</div>
+<p>Les premières semaines ont porté sur GitHub, les formats de fichiers, les calculs et le prétraitement. En semaine 4, j’ai notamment utilisé <code>readRDS()</code> pour lire un fichier RDS, transformé des chaînes de caractères et préparé deux versions d’un tableau au format large.</p>
+<p><strong>Un choix à vérifier.</strong> J’ai comparé les résultats de <code>reshape()</code> et de <code>pivot_wider()</code>. Pour comparer les valeurs, il faut d’abord s’assurer que les observations sont dans le même ordre et que les structures sont compatibles. Le suivi du portfolio rapporte une comparaison exécutée par Codex après ces ajustements.</p>
+<p><strong>Ce que je retiens.</strong> Le format réel d’un fichier guide sa lecture. Une transformation de données gagne aussi à être accompagnée d’un contrôle explicite de son résultat.</p>
+</section>
+<section id="apprendre-à-vérifier-mes-résultats" class="level2 parcours-etape">
+<h2 class="anchored" data-anchor-id="apprendre-à-vérifier-mes-résultats">Apprendre à vérifier mes résultats</h2>
+<div class="parcours-repere">
+<p>Semaines 5 à 8 · Diagnostiquer et contrôler</p>
+</div>
+<p>Le retour sur le Défi 1 a fait ressortir des améliorations à apporter à l’exactitude technique, à la validation et à la reproductibilité. L’entraînement puis le Défi 2 ont fourni des occasions concrètes de travailler ces points.</p>
+<p><strong>Un problème révélateur.</strong> Dans le Défi 2, une jointure sur le seul code tarifaire produisait 25 lignes pour un scénario qui devait en contenir 10. La clé composite et les contrôles d’unicité permettaient de respecter l’unité d’analyse. Un calcul indépendant et la conservation des valeurs inconnues complétaient cette vérification.</p>
+<p><strong>Ce que je retiens.</strong> Définir l’effectif attendu avant une jointure donne un repère pour détecter une erreur. Les contrôles de structure et de calcul apportent des informations complémentaires.</p>
+<p><a href="../pages/realisations/defi-2.html">Explorer la réalisation du Défi 2</a></p>
+</section>
+<section id="rendre-mon-travail-reproductible" class="level2 parcours-etape">
+<h2 class="anchored" data-anchor-id="rendre-mon-travail-reproductible">Rendre mon travail reproductible</h2>
+<div class="parcours-repere">
+<p>Semaines 7 à 9 · Relier les sources au rapport</p>
+</div>
+<p>Le rapport sur les séismes m’a amené à réunir les données, le script et le document Quarto. Le déplacement de fichiers a ensuite fait apparaître des problèmes de chemins relatifs. Le bilan de la semaine 7 décrit leur correction et les essais de rendu.</p>
+<p><strong>Une amélioration concrète.</strong> Dans l’entraînement du Défi 2, l’appel d’un script depuis Quarto a demandé une correction de nom de fichier. Ces situations montrent pourquoi il faut vérifier les chemins depuis le point d’entrée prévu.</p>
+<p><strong>Ce que je retiens.</strong> Un rapport consultable et un travail que l’on peut relancer nécessitent des vérifications différentes. Les sources, les données et les dépendances permettent de refaire le calcul. Git et les bilans aident à retrouver les changements et les contrôles documentés.</p>
+</section>
+<section id="structurer-et-automatiser" class="level2 parcours-etape">
+<h2 class="anchored" data-anchor-id="structurer-et-automatiser">Structurer et automatiser</h2>
+<div class="parcours-repere">
+<p>Projet d’équipe et semaine 10 · Collecter et tester</p>
+</div>
+<p>Dans le projet d’équipe, ma contribution GitHub Actions porte sur une collecte régulière d’indicateurs d’urgence. Le choix de conserver une observation par date et par région fixe la structure de l’historique et les contrôles à lui appliquer.</p>
+<p><strong>Un nouveau regard avec la semaine 10.</strong> Les exercices 1 à 8 du laboratoire commun aux modules 10 et 11 abordent les méthodes S3 <code>print()</code> et <code>summary()</code>, l’exploration d’un objet S4 et la vérification d’un coefficient d’asymétrie. Le calcul manuel, la fonction de référence et la simulation offrent plusieurs moyens d’examiner un résultat. Les tests avec <code>testthat</code> mettent aussi en évidence les limites de la fonction de départ, notamment avec les valeurs manquantes et certains arguments.</p>
+<p><strong>Ce que je retiens.</strong> Une collecte exige des contrôles sur ce qui est enregistré. Une fonction exige aussi des contrôles sur ses entrées et son comportement. Les échecs des tests de la semaine 10 font partie du diagnostic documenté de la version étudiée.</p>
+<p><a href="../pages/realisations/github-actions.html">Explorer la collecte GitHub Actions</a></p>
+</section>
+</div>
+<section id="continuer-à-gagner-en-autonomie" class="level2">
+<h2 class="anchored" data-anchor-id="continuer-à-gagner-en-autonomie">Continuer à gagner en autonomie</h2>
+<p>L’aide de l’IA a accompagné plusieurs de ces travaux et figure dans la <a href="../pages/declaration-ia.html">déclaration d’utilisation</a>. Mon bilan du Défi 2 indique un objectif qui reste pertinent pour la suite, soit pratiquer les étapes pour pouvoir expliquer les choix et refaire les contrôles avec moins d’aide.</p>
+<p>La suite du cours permettra de prolonger ce parcours avec les prochains exercices, les livrables du projet et le bilan final du portfolio.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -6,7 +6,7 @@
 - [x] Rédiger les deux études de cas à partir des traces retenues.
 - [x] Installer dans le dépôt les consignes des agents, leurs skills et les prompts de reprise.
 - [x] Rendre les sept pages avec Quarto 1.5.57 et vérifier 158 liens et ressources HTML, les liens Markdown et les métadonnées des deux skills.
-- [ ] Compléter la chronologie à partir des semaines 10 à 14 et des prochains livrables du projet.
+- [ ] Compléter la chronologie pour les semaines 11 à 14 et des prochains livrables du projet.
 - [ ] Ajouter les détails de présentation qu’Arthur veut rendre publics et relire les études de cas dans sa voix.
 - [ ] Vérifier les consignes officielles et les liens que le site pourra rendre publics.
 - [ ] Préparer la remise quand le site sera prêt. Renseigner URL, dépôt source, commit évalué et emplacement des réalisations dans le README. L’ajout du lien au portfolio reste à faire par Arthur ou sur instruction distincte.
@@ -24,3 +24,10 @@ La palette et la mise en page sont centralisées dans `assets/styles.css`. Le re
 ## 7 novembre 2026 — Structure visuelle
 
 Navigation, bandeaux, tableaux, cartes et pied de page partagent la palette bordeaux, or, noir et ivoire. Les variantes pour les petits écrans sont dans la feuille de style.
+
+## 13 novembre 2026 — Parcours et semaine 10
+
+Le parcours est développé autour de quatre étapes validées par Arthur. La semaine 10 est ajoutée à la chronologie. La skill actualiser-parcours et les prompts indiquent comment poursuivre les mises à jour avec validation préalable. Les prochaines semaines à documenter sont les semaines 11 à 14.
+
+
+Contrôles de cette mise à jour terminés. Les sept pages ont été générées, les quatre étapes du parcours et la présence de la semaine 10 dans le tableau ont été contrôlées, ainsi que les liens et ressources locaux. Les 57 liens documentaires et les métadonnées des trois skills ont aussi été vérifiés. Quarto a signalé des refus d’accès au nettoyage des fichiers temporaires après génération.

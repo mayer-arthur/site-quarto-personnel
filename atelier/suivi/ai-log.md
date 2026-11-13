@@ -22,3 +22,14 @@ Codex a adapté la palette proposée par Arthur et créé la feuille de style ai
 ## 7 novembre 2026 — Harmonisation de la présentation
 
 À la demande d’Arthur, Codex a harmonisé la navigation, les bandeaux des pages intérieures, le sommaire, les tableaux, les cartes et le pied de page. Les règles pour les petits écrans sont centralisées dans la feuille de style.
+
+## 13 novembre 2026 — Parcours et semaine 10
+
+- **Outil** — Codex.
+- **Demande** — développer le parcours en quatre étapes, ajouter la semaine 10 et actualiser la documentation et les skills après validation.
+- **Apports retenus** — rédaction du parcours, présentation en étapes, ligne de chronologie, skill actualiser-parcours et consigne de validation préalable.
+- **Vérifications** — lecture du bilan et du script de semaine 10 et de l’entrée IA du portfolio. Le script R n’a pas été relancé.
+- **Adaptations** — la semaine est terminée selon Arthur. Les échecs de tests restent présentés comme un diagnostic de la fonction de départ. Le texte s’appuie sur les apprentissages déjà documentés.
+
+
+Contrôles de cette mise à jour terminés. Les sept pages ont été générées, les quatre étapes du parcours et la présence de la semaine 10 dans le tableau ont été contrôlées, ainsi que les liens et ressources locaux. Les 57 liens documentaires et les métadonnées des trois skills ont aussi été vérifiés. Quarto a signalé des refus d’accès au nettoyage des fichiers temporaires après génération.

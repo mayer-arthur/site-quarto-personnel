@@ -19,3 +19,7 @@ Le journal du portfolio distingue deux usages de ChatGPT. Le 20 octobre, l’aid
 ## Refonte visuelle — 6 novembre 2026
 
 OpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction proposée par Arthur. Les pages et leurs ressources ont été contrôlées après le rendu Quarto.
+
+## Parcours et semaine 10 — 13 novembre 2026
+
+Codex a développé la page Parcours et intégré la semaine 10 à partir des bilans et du code du portfolio, selon une structure validée par Arthur. Les textes et la présentation en étapes ont été retenus. Le script de semaine 10 a été consulté pour documenter les sujets abordés et les limites des tests. Il n’a pas été réexécuté pendant cette rédaction.

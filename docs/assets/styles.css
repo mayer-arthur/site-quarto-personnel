@@ -287,3 +287,41 @@ footer.footer {
   #title-block-header h1, #title-block-header .subtitle, .site-hero h1, .hero-label { color: black; }
   .home-card { box-shadow: none; }
 }
+
+
+/* Parcours en quatre étapes, lisible dans l’ordre du document. */
+.parcours-etapes {
+  margin-block: 2rem;
+  padding-left: clamp(.85rem, 3vw, 1.75rem);
+  border-left: 2px solid #b57a37;
+}
+.parcours-etape {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: clamp(1.15rem, 3vw, 1.8rem);
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: #fffaf4;
+}
+.parcours-etape::before {
+  content: '';
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  left: calc(-1 * clamp(.85rem, 3vw, 1.75rem) - .41rem);
+  top: 2rem;
+  border-radius: 50%;
+  background: var(--wine);
+  border: 2px solid var(--paper);
+}
+.parcours-etape h2 {
+  margin-top: 0;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+}
+.parcours-repere {
+  color: var(--wine);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .035em;
+}
+.parcours-etape > p:last-child { margin-bottom: 0; }

@@ -18,8 +18,11 @@ aliases:
 | 7 | Rapport Quarto sur les séismes et entraînement au Défi 2. | Rendre un rapport depuis les sources et corriger des chemins relatifs. |
 | 8 | Défi 2 sur les tarifs et les lots. | Vérifier une clé de jointure, les effectifs et un calcul de référence. |
 | 9 | Exercices sur les structures de contrôle et les boucles, et bilan du deuxième jalon. | Comparer plusieurs façons de parcourir une liste. |
+| 10 | Exercices 1 à 8 du laboratoire commun aux modules 10 et 11, méthodes S3, exploration S4 et coefficient d’asymétrie. | Comparer un calcul à une référence et à une simulation, examiner les valeurs manquantes et interpréter les tests avec `testthat`. |
 
-La chronologie reflète les travaux documentés jusqu’à la semaine 9. Elle sera complétée à mesure que les traces de fin de session seront disponibles.
+La chronologie reflète les travaux documentés jusqu’à la semaine 10. Elle sera complétée à mesure que les traces de fin de session seront disponibles.
+
+La semaine 10 est terminée selon mon suivi actuel. Les échecs et l’erreur rapportés par les tests concernent la version de départ étudiée dans le laboratoire. Les corrections de cette fonction font partie des exercices suivants.
 
 ## Les défis
 

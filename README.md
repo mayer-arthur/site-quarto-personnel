@@ -2,6 +2,10 @@
 
 Site du cours STT-6230 à l’Université Laval, automne 2026. La page [Le cours](pages/cours.qmd) rassemble les modules, les défis, les jalons et le projet. Les deux réalisations sont le [Défi 2](pages/realisations/defi-2.qmd) et la [collecte GitHub Actions](pages/realisations/github-actions.qmd).
 
+La page [Parcours](pages/parcours.qmd) présente quatre étapes d’apprentissage. La chronologie du cours couvre les semaines 1 à 10.
+
+Le site est publié sur [GitHub Pages](https://mayer-arthur.github.io/site-quarto-personnel/). Pour le mettre à jour, régénérer `docs/`, puis inclure les sources et le rendu dans le commit et le push.
+
 ## Où trouver les fichiers
 
 | Emplacement | Contenu |
@@ -41,8 +45,12 @@ Inclure les ressources des pages dans la copie si de nouveaux fichiers sont ajou
 - [Prompts](atelier/CONTEXTE.md) pour documenter une semaine ou développer une réalisation.
 - [Progression](atelier/suivi/progression.md), [AI-log](atelier/suivi/ai-log.md) et [registre des traces](atelier/sources/traces.md) pour retrouver l’état du travail et les preuves.
 
+Pour ajouter une semaine au cours et au parcours, utiliser [actualiser-parcours](atelier/quarto/actualiser-parcours/SKILL.md). Les agents présentent les changements à Arthur avant toute écriture et attendent sa validation.
+
 Les dépôts voisins du portfolio et du projet servent de sources en lecture seule.
 
 ## Remise à préparer
 
 Renseigner l’adresse publique, le dépôt source et le commit à évaluer après publication. Les deux réalisations sont identifiées en haut de cette page. Le gabarit local indique le mercredi 16 décembre 2026 à 23 h 55. [Consignes du site personnel](https://aureliennicosiaulaval.github.io/programmation-pour-la-science-des-donnees/site-personnel.html).
+
+Si Quarto affiche une erreur concernant `template.patched`, définir TEMP et TMP pour le processus de rendu dans un dossier temporaire du dépôt permet de contourner le problème observé sur ce poste. Le rendu du 13 novembre a abouti ainsi. Quarto a toutefois signalé un refus d’accès lors du nettoyage de certains fichiers temporaires.
