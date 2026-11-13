@@ -21,3 +21,8 @@ Le bilan `semaines/semaine-10/README.md`, le script `semaines/semaine-10/Script 
 Arthur confirme le 13 novembre que la semaine est terminée. Cette confirmation complète le bilan antérieur, qui indiquait encore une relecture à faire. Elle ne constitue pas une correction des défauts détectés par les tests.
 
 Les étapes du parcours s’appuient aussi sur les bilans des semaines 4, 5, 7 et 8, le suivi du portfolio et les traces GitAction déjà relevées.
+
+
+## Aperçus visuels — 13 novembre 2026
+
+Les SVG de assets/visuels/ synthétisent les traces du Défi 2 et de GitAction décrites plus haut. Le visuel Défi 2 compare 25 et 10 lignes dans le scénario après. Le visuel GitHub Actions représente le lancement, la collecte en R et le commit conditionnel du CSV. La présentation de l’accueil reprend le cours suivi, les outils pratiqués et l’objectif d’autonomie documenté dans le bilan du Défi 2.

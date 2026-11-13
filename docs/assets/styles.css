@@ -325,3 +325,57 @@ footer.footer {
   letter-spacing: .035em;
 }
 .parcours-etape > p:last-child { margin-bottom: 0; }
+
+
+/* Navigation des réalisations et aperçus. */
+#quarto-header .dropdown-menu {
+  --bs-dropdown-bg: #27181e;
+  --bs-dropdown-color: #fff8f0;
+  --bs-dropdown-link-color: #fff8f0;
+  --bs-dropdown-link-hover-color: #f1c76c;
+  --bs-dropdown-link-hover-bg: #ffffff12;
+  --bs-dropdown-link-active-bg: #791b32;
+  --bs-dropdown-link-active-color: #fff8f0;
+  border: 1px solid #b57a37;
+  border-radius: .4rem;
+  padding: .4rem;
+}
+#quarto-header .dropdown-item { padding: .6rem .85rem; border-radius: .2rem; }
+
+.site-actualite {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--wine);
+  background: #f2e9dc;
+  padding: 1.25rem 1.5rem;
+  border-radius: .4rem;
+  margin-block: 1.75rem;
+}
+.site-actualite h3 { margin-top: 0; }
+.site-actualite p:last-child { margin-bottom: 0; }
+.actualite-date { color: #685258; font-size: .8rem; }
+.realisations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.realisation-apercu {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: #fffaf4;
+}
+.realisation-apercu h2 { font-size: 1.45rem; margin-top: 0; }
+.realisation-apercu h2 a { text-decoration: none; }
+.realisation-apercu h2 a:hover { text-decoration: underline; }
+.realisation-apercu p:last-child { margin-bottom: 0; }
+.realisation-apercu img, img.realisation-visuel {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .6rem;
+}
+img.realisation-visuel { max-width: 40rem; margin: 1.5rem auto; }
+@media (max-width: 720px) {
+  .realisations-grid { grid-template-columns: 1fr; }
+}

@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -100,10 +101,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../pages/cours.html"> 
 <span class="menu-text">Le cours</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../pages/realisations/index.html" aria-current="page"> 
-<span class="menu-text">Réalisations</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-réalisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Réalisations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-réalisations">    
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/index.html">
+ <span class="dropdown-text">Vue d’ensemble</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/defi-2.html">
+ <span class="dropdown-text">Défi 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/github-actions.html">
+ <span class="dropdown-text">GitHub Actions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../pages/declaration-ia.html"> 
 <span class="menu-text">Déclaration IA</span></a>
@@ -119,15 +135,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-  <li><a href="#défi-2-vérifier-une-jointure-et-ses-calculs" id="toc-défi-2-vérifier-une-jointure-et-ses-calculs" class="nav-link active" data-scroll-target="#défi-2-vérifier-une-jointure-et-ses-calculs">Défi 2 — vérifier une jointure et ses calculs</a></li>
-  <li><a href="#projet-github-actions" id="toc-projet-github-actions" class="nav-link" data-scroll-target="#projet-github-actions">Projet — GitHub Actions</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -151,16 +160,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="défi-2-vérifier-une-jointure-et-ses-calculs" class="level2">
-<h2 class="anchored" data-anchor-id="défi-2-vérifier-une-jointure-et-ses-calculs"><a href="../../pages/realisations/defi-2.html">Défi 2 — vérifier une jointure et ses calculs</a></h2>
-<p>Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs.</p>
+<div class="realisations-grid">
+<section id="défi-2-vérifier-une-jointure" class="level2 realisation-apercu">
+<h2 class="anchored" data-anchor-id="défi-2-vérifier-une-jointure"><a href="../../pages/realisations/defi-2.html">Défi 2 — vérifier une jointure</a></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/visuels/defi-2.svg" class="img-fluid figure-img"></p>
+<figcaption>Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.</figcaption>
+</figure>
+</div>
+<p>Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.</p>
+<p><a href="../../pages/realisations/defi-2.html">Découvrir le Défi 2</a></p>
 </section>
-<section id="projet-github-actions" class="level2">
+<section id="projet-github-actions" class="level2 realisation-apercu">
 <h2 class="anchored" data-anchor-id="projet-github-actions"><a href="../../pages/realisations/github-actions.html">Projet — GitHub Actions</a></h2>
-<p>Une contribution au projet d’équipe centrée sur l’automatisation des vérifications dans GitHub.</p>
-
-
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/visuels/github-actions.svg" class="img-fluid figure-img"></p>
+<figcaption>Trois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.</figcaption>
+</figure>
+</div>
+<p>Une contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.</p>
+<p><a href="../../pages/realisations/github-actions.html">Découvrir la collecte</a></p>
 </section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -587,7 +612,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Arthur Mayer · STT-6230</p>
+<p>Portfolio personnel · STT-6230</p>
 </div>   
     <div class="nav-footer-center">
 <p>Université Laval · Automne 2026</p>

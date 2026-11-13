@@ -31,3 +31,10 @@ Le parcours est développé autour de quatre étapes validées par Arthur. La se
 
 
 Contrôles de cette mise à jour terminés. Les sept pages ont été générées, les quatre étapes du parcours et la présence de la semaine 10 dans le tableau ont été contrôlées, ainsi que les liens et ressources locaux. Les 57 liens documentaires et les métadonnées des trois skills ont aussi été vérifiés. Quarto a signalé des refus d’accès au nettoyage des fichiers temporaires après génération.
+
+## 13 novembre 2026 — Accueil et aperçus
+
+La présentation et le bloc En ce moment complètent l’accueil. Les deux réalisations disposent d’un aperçu SVG et d’un accès direct dans le menu. Le favicon est dans assets/favicon.svg. Le nom personnel a été retiré des déclarations et du journal IA du site, y compris du pied de page commun.
+
+
+Vérification terminée. Les sept pages ont été rendues, les 203 liens et ressources HTML ainsi que 66 liens dans les sources et la documentation ont été contrôlés. Les trois SVG sont valides. La déclaration source, son HTML, sa redirection et le journal IA du site ne contiennent plus le nom personnel. Quarto a encore signalé des refus d’accès lors du nettoyage temporaire après génération.

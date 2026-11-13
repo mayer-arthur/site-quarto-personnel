@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -100,10 +101,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../pages/cours.html"> 
 <span class="menu-text">Le cours</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../pages/realisations/index.html"> 
-<span class="menu-text">Réalisations</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-réalisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Réalisations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-réalisations">    
+        <li>
+    <a class="dropdown-item" href="../pages/realisations/index.html">
+ <span class="dropdown-text">Vue d’ensemble</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/realisations/defi-2.html">
+ <span class="dropdown-text">Défi 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/realisations/github-actions.html">
+ <span class="dropdown-text">GitHub Actions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="../pages/declaration-ia.html" aria-current="page"> 
 <span class="menu-text">Déclaration IA</span></a>
@@ -128,6 +144,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#usage-documenté-pendant-le-défi-2" id="toc-usage-documenté-pendant-le-défi-2" class="nav-link" data-scroll-target="#usage-documenté-pendant-le-défi-2">Usage documenté pendant le Défi 2</a></li>
   <li><a href="#refonte-visuelle-6-novembre-2026" id="toc-refonte-visuelle-6-novembre-2026" class="nav-link" data-scroll-target="#refonte-visuelle-6-novembre-2026">Refonte visuelle — 6 novembre 2026</a></li>
   <li><a href="#parcours-et-semaine-10-13-novembre-2026" id="toc-parcours-et-semaine-10-13-novembre-2026" class="nav-link" data-scroll-target="#parcours-et-semaine-10-13-novembre-2026">Parcours et semaine 10 — 13 novembre 2026</a></li>
+  <li><a href="#aperçus-et-navigation-13-novembre-2026" id="toc-aperçus-et-navigation-13-novembre-2026" class="nav-link" data-scroll-target="#aperçus-et-navigation-13-novembre-2026">Aperçus et navigation — 13 novembre 2026</a></li>
   </ul>
 </nav>
     </div>
@@ -169,11 +186,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="refonte-visuelle-6-novembre-2026" class="level2">
 <h2 class="anchored" data-anchor-id="refonte-visuelle-6-novembre-2026">Refonte visuelle — 6 novembre 2026</h2>
-<p>OpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction proposée par Arthur. Les pages et leurs ressources ont été contrôlées après le rendu Quarto.</p>
+<p>OpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction demandée. Les pages et leurs ressources ont été contrôlées après le rendu Quarto.</p>
 </section>
 <section id="parcours-et-semaine-10-13-novembre-2026" class="level2">
 <h2 class="anchored" data-anchor-id="parcours-et-semaine-10-13-novembre-2026">Parcours et semaine 10 — 13 novembre 2026</h2>
-<p>Codex a développé la page Parcours et intégré la semaine 10 à partir des bilans et du code du portfolio, selon une structure validée par Arthur. Les textes et la présentation en étapes ont été retenus. Le script de semaine 10 a été consulté pour documenter les sujets abordés et les limites des tests. Il n’a pas été réexécuté pendant cette rédaction.</p>
+<p>Codex a développé la page Parcours et intégré la semaine 10 à partir des bilans et du code du portfolio, selon une structure validée. Les textes et la présentation en étapes ont été retenus. Le script de semaine 10 a été consulté pour documenter les sujets abordés et les limites des tests. Il n’a pas été réexécuté pendant cette rédaction.</p>
+</section>
+<section id="aperçus-et-navigation-13-novembre-2026" class="level2">
+<h2 class="anchored" data-anchor-id="aperçus-et-navigation-13-novembre-2026">Aperçus et navigation — 13 novembre 2026</h2>
+<p>Codex a rédigé une courte présentation à partir des informations du parcours, ajouté un bloc d’actualité daté et organisé le menu des réalisations. Deux schémas SVG synthétisent des éléments déjà documentés, soit le contrôle d’effectif du Défi 2 et les étapes de la collecte GitHub Actions. Codex a aussi produit l’icône de l’onglet et retiré les mentions nominatives des déclarations et du journal IA du site.</p>
 
 
 </section>
@@ -603,7 +624,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Arthur Mayer · STT-6230</p>
+<p>Portfolio personnel · STT-6230</p>
 </div>   
     <div class="nav-footer-center">
 <p>Université Laval · Automne 2026</p>

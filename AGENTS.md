@@ -13,4 +13,6 @@ Ce dépôt contient les sources du site Quarto. Tout travail d’écriture, de r
 
 Avant toute écriture, présenter les changements envisagés à Arthur et attendre sa validation. Une validation donnée dans la séance autorise la mise en œuvre du périmètre approuvé.
 
+Les déclarations et les journaux IA emploient des formulations neutres, sans le nom de la personne. Vérifier aussi la page HTML générée et ses éléments communs.
+
 Le site couvre le cours, les défis, les jalons et le projet. Les études de cas retenues sont le Défi 2 et la contribution GitHub Actions documentée dans `GitAction`. Les fichiers publics sont déclarés dans [_quarto.yml](_quarto.yml).

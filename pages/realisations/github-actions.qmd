@@ -9,6 +9,8 @@ aliases:
 
 Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation.
 
+![Le workflow déclenche le script R, qui alimente l’historique. Le CSV est enregistré dans Git lorsqu’il change.](../../assets/visuels/github-actions.svg){.realisation-visuel}
+
 ## De la collecte au CSV
 
 1. Le workflow peut être lancé manuellement et prévoit trois passages quotidiens, à 3 h 55, 11 h 55 et 20 h 55, heure de Toronto.

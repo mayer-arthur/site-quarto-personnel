@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+<title id="title">Du workflow GitHub Actions au CSV historique</title>
+<desc id="desc">Un lancement planifié ou manuel déclenche la collecte en R. Le script conserve une première observation par date et région. Le workflow enregistre le CSV dans Git si son contenu change.</desc>
+<rect width="640" height="420" rx="20" fill="#f3eae0"/>
+<g font-family="Arial,sans-serif">
+<text x="32" y="48" fill="#791b32" font-size="18" font-weight="700">PROJET · COLLECTE AUTOMATISÉE</text>
+<path d="M62 100v255" stroke="#b57a37" stroke-width="3"/>
+<g fill="#491023"><circle cx="62" cy="112" r="24"/><circle cx="62" cy="224" r="24"/><circle cx="62" cy="336" r="24"/></g>
+<g fill="#f1c76c" text-anchor="middle" font-size="20" font-weight="700"><text x="62" y="119">1</text><text x="62" y="231">2</text><text x="62" y="343">3</text></g>
+<g fill="#251c1d" font-size="23" font-weight="700"><text x="108" y="109">GitHub Actions</text><text x="108" y="221">Collecte et historique en R</text><text x="108" y="333">CSV versionné</text></g>
+<g fill="#685258" font-size="18"><text x="108" y="140">Lancement planifié ou manuel</text><text x="108" y="252">Une observation par date et région</text><text x="108" y="364">Commit si le fichier change</text></g>
+</g></svg>

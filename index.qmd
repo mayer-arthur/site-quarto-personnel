@@ -20,6 +20,24 @@ Mon parcours dans le cours STT-6230, des premiers exercices en R à la collecte 
 
 ::::
 
+## À propos de mon parcours
+
+Je suis le cours STT-6230 à l’Université Laval. J’y travaille avec R, Quarto et GitHub pour préparer des données, vérifier des résultats et présenter mes analyses. Avec le projet d’équipe, cette démarche s’étend à la collecte automatisée d’indicateurs d’urgence.
+
+Mon objectif est de gagner en autonomie pour expliquer mes choix techniques et refaire les contrôles avec moins d’aide.
+
+::: {.site-actualite}
+### En ce moment
+
+::: {.actualite-date}
+Mise à jour du 13 novembre 2026
+:::
+
+La semaine 10 est terminée. Elle complète mon parcours avec les objets R et les tests. Je prépare aussi la présentation de ma contribution GitHub Actions au projet.
+
+[Suivre ma progression dans le cours](pages/cours.qmd)
+:::
+
 ## Du cours à la pratique
 
 :::: {.home-grid}

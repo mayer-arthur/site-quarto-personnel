@@ -25,28 +25,35 @@
     "href": "pages/declaration-ia.html#refonte-visuelle-6-novembre-2026",
     "title": "Déclaration d’utilisation de l’IA",
     "section": "Refonte visuelle — 6 novembre 2026",
-    "text": "Refonte visuelle — 6 novembre 2026\nOpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction proposée par Arthur. Les pages et leurs ressources ont été contrôlées après le rendu Quarto."
+    "text": "Refonte visuelle — 6 novembre 2026\nOpenAI Codex a proposé la palette et produit la feuille de style ainsi que la mise en page de l’accueil. La palette rouge, or et noir reprend la direction demandée. Les pages et leurs ressources ont été contrôlées après le rendu Quarto."
   },
   {
     "objectID": "pages/declaration-ia.html#parcours-et-semaine-10-13-novembre-2026",
     "href": "pages/declaration-ia.html#parcours-et-semaine-10-13-novembre-2026",
     "title": "Déclaration d’utilisation de l’IA",
     "section": "Parcours et semaine 10 — 13 novembre 2026",
-    "text": "Parcours et semaine 10 — 13 novembre 2026\nCodex a développé la page Parcours et intégré la semaine 10 à partir des bilans et du code du portfolio, selon une structure validée par Arthur. Les textes et la présentation en étapes ont été retenus. Le script de semaine 10 a été consulté pour documenter les sujets abordés et les limites des tests. Il n’a pas été réexécuté pendant cette rédaction."
+    "text": "Parcours et semaine 10 — 13 novembre 2026\nCodex a développé la page Parcours et intégré la semaine 10 à partir des bilans et du code du portfolio, selon une structure validée. Les textes et la présentation en étapes ont été retenus. Le script de semaine 10 a été consulté pour documenter les sujets abordés et les limites des tests. Il n’a pas été réexécuté pendant cette rédaction."
+  },
+  {
+    "objectID": "pages/declaration-ia.html#aperçus-et-navigation-13-novembre-2026",
+    "href": "pages/declaration-ia.html#aperçus-et-navigation-13-novembre-2026",
+    "title": "Déclaration d’utilisation de l’IA",
+    "section": "Aperçus et navigation — 13 novembre 2026",
+    "text": "Aperçus et navigation — 13 novembre 2026\nCodex a rédigé une courte présentation à partir des informations du parcours, ajouté un bloc d’actualité daté et organisé le menu des réalisations. Deux schémas SVG synthétisent des éléments déjà documentés, soit le contrôle d’effectif du Défi 2 et les étapes de la collecte GitHub Actions. Codex a aussi produit l’icône de l’onglet et retiré les mentions nominatives des déclarations et du journal IA du site."
   },
   {
     "objectID": "pages/realisations/defi-2.html",
     "href": "pages/realisations/defi-2.html",
     "title": "Défi 2",
     "section": "",
-    "text": "L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats."
+    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
   },
   {
     "objectID": "pages/realisations/defi-2.html#contexte-et-production",
     "href": "pages/realisations/defi-2.html#contexte-et-production",
     "title": "Défi 2",
     "section": "",
-    "text": "L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats."
+    "text": "L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.\n\n\n\nPour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code."
   },
   {
     "objectID": "pages/realisations/defi-2.html#le-choix-technique",
@@ -60,7 +67,7 @@
     "href": "pages/realisations/defi-2.html#ce-que-cette-réalisation-montre",
     "title": "Défi 2",
     "section": "Ce que cette réalisation montre",
-    "text": "Ce que cette réalisation montre\neffectif’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant."
+    "text": "Ce que cette réalisation montre\nLe contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant."
   },
   {
     "objectID": "pages/realisations/defi-2.html#trace-et-limite",
@@ -110,6 +117,13 @@
     "title": "Programmer pour la science des données",
     "section": "",
     "text": "Arthur Mayer · Université Laval · Automne 2026\n\n\n\nMon parcours dans le cours STT-6230, des premiers exercices en R à la collecte automatisée de données pour le projet d’équipe.\n\nExplorer le cours Voir mes réalisations"
+  },
+  {
+    "objectID": "index.html#à-propos-de-mon-parcours",
+    "href": "index.html#à-propos-de-mon-parcours",
+    "title": "Programmer pour la science des données",
+    "section": "À propos de mon parcours",
+    "text": "À propos de mon parcours\nJe suis le cours STT-6230 à l’Université Laval. J’y travaille avec R, Quarto et GitHub pour préparer des données, vérifier des résultats et présenter mes analyses. Avec le projet d’équipe, cette démarche s’étend à la collecte automatisée d’indicateurs d’urgence.\nMon objectif est de gagner en autonomie pour expliquer mes choix techniques et refaire les contrôles avec moins d’aide.\n\nEn ce moment\n\nMise à jour du 13 novembre 2026\n\nLa semaine 10 est terminée. Elle complète mon parcours avec les objets R et les tests. Je prépare aussi la présentation de ma contribution GitHub Actions au projet.\nSuivre ma progression dans le cours"
   },
   {
     "objectID": "index.html#du-cours-à-la-pratique",
@@ -165,35 +179,35 @@
     "href": "pages/realisations/index.html",
     "title": "Deux réalisations",
     "section": "",
-    "text": "Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs."
+    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2\n\n\n\n\n\n\nTrois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
   },
   {
-    "objectID": "pages/realisations/index.html#défi-2-vérifier-une-jointure-et-ses-calculs",
-    "href": "pages/realisations/index.html#défi-2-vérifier-une-jointure-et-ses-calculs",
+    "objectID": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
+    "href": "pages/realisations/index.html#défi-2-vérifier-une-jointure",
     "title": "Deux réalisations",
     "section": "",
-    "text": "Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs."
+    "text": "Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.\n\n\nUne analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.\nDécouvrir le Défi 2"
   },
   {
     "objectID": "pages/realisations/index.html#projet-github-actions",
     "href": "pages/realisations/index.html#projet-github-actions",
     "title": "Deux réalisations",
-    "section": "Projet — GitHub Actions",
-    "text": "Projet — GitHub Actions\nUne contribution au projet d’équipe centrée sur l’automatisation des vérifications dans GitHub."
+    "section": "",
+    "text": "Trois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.\n\n\nUne contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.\nDécouvrir la collecte"
   },
   {
     "objectID": "pages/realisations/github-actions.html",
     "href": "pages/realisations/github-actions.html",
     "title": "GitHub Actions pour le projet",
     "section": "",
-    "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation."
+    "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation.\n\n\n\nLe workflow déclenche le script R, qui alimente l’historique. Le CSV est enregistré dans Git lorsqu’il change."
   },
   {
     "objectID": "pages/realisations/github-actions.html#contexte-et-contribution",
     "href": "pages/realisations/github-actions.html#contexte-et-contribution",
     "title": "GitHub Actions pour le projet",
     "section": "",
-    "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation."
+    "text": "Pour le projet d’équipe, j’ai travaillé sur la collecte automatisée d’indicateurs d’urgence à partir d’Index Santé. Le workflow GitHub Actions lance un script R qui recueille trois indicateurs par région, soit la durée en salle d’attente, la durée sur civière et le taux d’occupation.\n\n\n\nLe workflow déclenche le script R, qui alimente l’historique. Le CSV est enregistré dans Git lorsqu’il change."
   },
   {
     "objectID": "pages/realisations/github-actions.html#de-la-collecte-au-csv",

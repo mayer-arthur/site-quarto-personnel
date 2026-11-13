@@ -4,10 +4,26 @@ aliases:
   - /realisations.html
 ---
 
-## [Défi 2 — vérifier une jointure et ses calculs](defi-2.qmd)
+:::: {.realisations-grid}
 
-Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et, par conséquent, la fiabilité des calculs.
+::: {.realisation-apercu}
+## [Défi 2 — vérifier une jointure](defi-2.qmd)
 
+![Comparaison du nombre de lignes obtenu avec le code tarifaire seul et avec la clé composite.](../../assets/visuels/defi-2.svg)
+
+Une analyse en R où le choix d’une clé de jointure change le nombre de lignes et la fiabilité des calculs.
+
+[Découvrir le Défi 2](defi-2.qmd)
+:::
+
+::: {.realisation-apercu}
 ## [Projet — GitHub Actions](github-actions.qmd)
 
-Une contribution au projet d’équipe centrée sur l’automatisation des vérifications dans GitHub.
+![Trois étapes de la collecte, du déclenchement du workflow à la conservation du CSV.](../../assets/visuels/github-actions.svg)
+
+Une contribution au projet d’équipe centrée sur la collecte automatisée et la construction d’un historique.
+
+[Découvrir la collecte](github-actions.qmd)
+:::
+
+::::

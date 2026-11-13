@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -100,10 +101,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../pages/cours.html"> 
 <span class="menu-text">Le cours</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../pages/realisations/index.html"> 
-<span class="menu-text">Réalisations</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-réalisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Réalisations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-réalisations">    
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/index.html">
+ <span class="dropdown-text">Vue d’ensemble</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/defi-2.html">
+ <span class="dropdown-text">Défi 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pages/realisations/github-actions.html">
+ <span class="dropdown-text">GitHub Actions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../pages/declaration-ia.html"> 
 <span class="menu-text">Déclaration IA</span></a>
@@ -156,7 +172,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="contexte-et-production" class="level2">
 <h2 class="anchored" data-anchor-id="contexte-et-production">Contexte et production</h2>
-<p>L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.</p>
+<p>L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/visuels/defi-2.svg" class="realisation-visuel img-fluid figure-img"></p>
+<figcaption>Pour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code.</figcaption>
+</figure>
+</div>
 </section>
 <section id="le-choix-technique" class="level2">
 <h2 class="anchored" data-anchor-id="le-choix-technique">Le choix technique</h2>
@@ -194,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ce-que-cette-réalisation-montre" class="level2">
 <h2 class="anchored" data-anchor-id="ce-que-cette-réalisation-montre">Ce que cette réalisation montre</h2>
-<p>effectif’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.</p>
+<p>Le contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.</p>
 </section>
 <section id="trace-et-limite" class="level2">
 <h2 class="anchored" data-anchor-id="trace-et-limite">Trace et limite</h2>
@@ -629,7 +651,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Arthur Mayer · STT-6230</p>
+<p>Portfolio personnel · STT-6230</p>
 </div>   
     <div class="nav-footer-center">
 <p>Université Laval · Automne 2026</p>

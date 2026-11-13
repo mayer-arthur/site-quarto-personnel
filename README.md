@@ -13,6 +13,8 @@ Le site est publié sur [GitHub Pages](https://mayer-arthur.github.io/site-quart
 | [index.qmd](index.qmd) | Source de la page d’accueil. |
 | [pages/](pages/) | Cours, parcours et déclaration IA. |
 | [pages/realisations/](pages/realisations/) | Sommaire, Défi 2 et GitHub Actions. |
+| [assets/visuels/](assets/visuels/) | Aperçus SVG des réalisations. |
+| [assets/favicon.svg](assets/favicon.svg) | Icône de l’onglet. |
 | [assets/styles.css](assets/styles.css) | Palette et mise en page du site. |
 | [atelier/](atelier/) | Prompts, agents, skills, traces et suivi. |
 | [docs/](docs/) | Site généré. Ouvrir [index.html](docs/index.html) pour le consulter. |

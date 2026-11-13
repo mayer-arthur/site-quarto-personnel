@@ -14,8 +14,9 @@ lang: fr
 
 website:
   title: "Mon parcours en science des données"
+  favicon: assets/favicon.svg
   page-footer:
-    left: "Arthur Mayer · STT-6230"
+    left: "Portfolio personnel · STT-6230"
     center: "Université Laval · Automne 2026"
     right:
       - text: Déclaration IA
@@ -29,7 +30,13 @@ website:
       - text: Le cours
         href: pages/cours.qmd
       - text: Réalisations
-        href: pages/realisations/index.qmd
+        menu:
+          - text: Vue d’ensemble
+            href: pages/realisations/index.qmd
+          - text: Défi 2
+            href: pages/realisations/defi-2.qmd
+          - text: GitHub Actions
+            href: pages/realisations/github-actions.qmd
       - text: Déclaration IA
         href: pages/declaration-ia.qmd
 

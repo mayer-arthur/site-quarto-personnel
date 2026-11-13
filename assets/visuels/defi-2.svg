@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+<title id="title">Défi 2, choisir la clé de jointure</title>
+<desc id="desc">Pour dix lots dans le scénario après, une jointure sur le code seul produit vingt-cinq lignes. La clé source et code conserve les dix lignes attendues.</desc>
+<rect width="640" height="420" rx="20" fill="#f3eae0"/>
+<g font-family="Arial,sans-serif">
+<text x="32" y="48" fill="#791b32" font-size="18" font-weight="700">DÉFI 2 · CONTRÔLER LA JOINTURE</text>
+<text x="32" y="86" fill="#251c1d" font-size="24" font-weight="700">10 lots dans le scénario après</text>
+<rect x="28" y="114" width="584" height="112" rx="12" fill="#fffaf4" stroke="#dfd2c3"/>
+<text x="50" y="155" fill="#251c1d" font-size="21">Code tarifaire seul</text>
+<text x="50" y="190" fill="#685258" font-size="17">Plusieurs correspondances par lot</text>
+<text x="574" y="171" text-anchor="end" fill="#791b32" font-size="48" font-weight="700">25</text>
+<rect x="28" y="242" width="584" height="112" rx="12" fill="#491023"/>
+<text x="50" y="283" fill="#fff8f0" font-size="21">Source + code tarifaire</text>
+<text x="50" y="318" fill="#f1c76c" font-size="17">Effectif attendu conservé</text>
+<text x="574" y="299" text-anchor="end" fill="#f1c76c" font-size="48" font-weight="700">10</text>
+<text x="32" y="392" fill="#685258" font-size="16">Nombre de lignes après la jointure · résultats documentés</text>
+</g></svg>

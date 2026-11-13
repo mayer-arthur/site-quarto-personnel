@@ -7,7 +7,9 @@ aliases:
 
 ## Contexte et production
 
-L’analyse compare le surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.
+L’analyse compare les surtaxes simulées pour une commande fictive de dix lots avant et après un changement tarifaire. J’ai utilisé R pour préparer les tables et Quarto pour présenter la démarche et les résultats.
+
+![Pour le scénario après du Défi 2, le code seul produit 25 lignes contre les 10 lignes attendues avec la clé source et code.](../../assets/visuels/defi-2.svg){.realisation-visuel}
 
 ## Le choix technique
 
@@ -22,7 +24,7 @@ Un même code tarifaire peut apparaître dans plusieurs tables. La jointure sur 
 
 ## Ce que cette réalisation montre
 
-effectif’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.
+Le contrôle d’effectif a permis de détecter que la jointure changeait l’unité d’analyse. Définir la clé avant de joindre et vérifier ensuite l’unicité des lots réduit le risque de compter plusieurs fois un même montant.
 
 ## Trace et limite
 
